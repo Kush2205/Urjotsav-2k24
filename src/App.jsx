@@ -5,6 +5,8 @@ import Layout from './Layout';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import Events from './components/Events'
+import About from './components/About';
+import Gallery from './components/Gallery';
 
 
 
@@ -19,8 +21,8 @@ function App() {
           <Route index element={<Home/>}/>
             <Route path="contact" element={<Contact />} />
             <Route path="Events" element={<Events />} />
-           
-          
+            <Route path="About" element={<About />} />
+            <Route path="Gallery" element={<Gallery />} />
         </Route>
       </Routes>
     </Router>
