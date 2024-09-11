@@ -5,7 +5,7 @@ export default function Header(props) {
 
     return (
         <>
-            <div>Header</div>
+            <div className=' bg-transparent z-3 text-white'>Header</div>
         </>
     )
 }
