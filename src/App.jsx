@@ -7,7 +7,8 @@ import Home from './components/Home';
 import Events from './components/Events'
 import About from './components/About';
 import Gallery from './components/Gallery';
-
+import Ambassador from './components/Ambassador';
+import Sponsors from './components/Sponsors';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
             <Route path="Events" element={<Events />} />
             <Route path="About" element={<About />} />
             <Route path="Gallery" element={<Gallery />} />
+            <Route path="Ambassadors" element={<Ambassador/>} />
+            <Route path='Sponsors' element={<Sponsors/>} />
         </Route>
       </Routes>
     </Router>
