@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import background from '../assets/Images/Mainbg.jpg';
 import gsap from 'gsap';
 
-export default function EventsCard(props) {
+export default function EventsCard({ image, text, sname }) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
@@ -12,18 +11,42 @@ export default function EventsCard(props) {
         const textElement = textRef.current;
         const outerDivElement = outerDivRef.current;
 
+        const neonGlowStyle = {
+            boxShadow: '0 0 30px rgba(45,143,184, 0.8), 0 0 30px rgba(45,143,184, 0.6), 0 0 30px rgba(45,143,184, 0.4)',
+            backdropFilter: 'blur(10px)' 
+        };
+
         const handleMouseEnter = () => {
             const tl = gsap.timeline();
-            tl.to(imgElement, { scale: 0.6, y: -imgElement.offsetHeight / 5, opacity: 1, borderColor: 'white', borderWidth: '5px', duration: 0.5 })
-              .to(textElement, { y: -190, opacity: 1, duration: 0.5 }, 0)
-              .to(outerDivElement, { borderColor: 'white', borderWidth: '3px', duration: 0.2 }, 0);
+            tl.to(imgElement, {
+                scale: 0.6,
+                y: -imgElement.offsetHeight / 5,
+                duration: 0.5,
+            })
+            .to(textElement, { y: -40, opacity: 1, duration: 0.5 }, 0)
+            .to(outerDivElement, { 
+                borderColor: 'transparent',
+                borderWidth: '3px',
+                duration: 0.2,
+                boxShadow: neonGlowStyle.boxShadow,
+                backdropFilter: neonGlowStyle.backdropFilter
+            }, 0);
         };
 
         const handleMouseLeave = () => {
             const tl = gsap.timeline();
-            tl.to(imgElement, { scale: 1, y: 0, opacity: 0.85, borderColor: 'transparent', borderWidth: '0px', duration: 0.5 })
-              .to(textElement, { y: 0, opacity: 0, duration: 0.5 }, 0)
-              .to(outerDivElement, { borderWidth:0, duration: 0.2 }, 0);
+            tl.to(imgElement, {
+                scale: 1,
+                y: 0,
+                duration: 0.5,
+            })
+            .to(textElement, { y: '100%', opacity: 0, duration: 0.5 }, 0)
+            .to(outerDivElement, {
+                borderWidth: 0,
+                duration: 0.2,
+                boxShadow: 'none',
+                backdropFilter: 'none'
+            }, 0);
         };
 
         const handleImageLoad = () => {
@@ -49,15 +72,29 @@ export default function EventsCard(props) {
     }, []);
 
     return (
-        <>
-            <div className='flex justify-center w-full'>
-                <div ref={outerDivRef} className='relative p-2 rounded-xl'>
-                    <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[535px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
-                    <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>
-                        Hover Text
-                    </div>
+        <div className='flex flex-col items-center w-full px-4 py-6'>
+            <div 
+                ref={outerDivRef} 
+                className='relative rounded-xl overflow-hidden border-0'
+                style={{ width: '300px', height: '250px' }} // Fixed width and height for consistency
+            >
+                <img 
+                    ref={imgRef} 
+                    src={image} 
+                    alt='background' 
+                    className='w-full h-full object-cover' 
+                />
+                <div 
+                    ref={textRef} 
+                    className='absolute bottom-0 left-5 right-0 text-wrap w-[250px] text-center text-white opacity-0'
+                    style={{ transform: 'translateY(100%)' }} // Start below the image
+                >
+                    {text}
                 </div>
             </div>
-        </>
+            <div className='mt-4 text-center text-white opacity-[100%]'>
+                {sname}
+            </div>
+        </div>
     );
 }

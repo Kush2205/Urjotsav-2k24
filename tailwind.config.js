@@ -16,11 +16,17 @@ export default {
   theme: {
     extend: {
       animation: {
+        slowspin: 'spin 3s linear infinite',
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
           shimmer: "shimmer 2s linear infinite",
       },
+      
       keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
@@ -38,7 +44,13 @@ export default {
       fontFamily:{
         Sankofa:["Sankofa Display","sans-serif"],
         Megrim:["Megrim","sans-serif"],
-        Jost:["Jost","sans-serif"]
+        Jost:["Jost","sans-serif"],
+        Space:['Spaceage', 'sans-serif'],
+        Apello:['Apello', 'sans-serif'],
+        Spaceship:['Spaceship','sans-serif'],
+        Techapture:['Techapture','sans-serif'],
+        Rajdhani:["Rajdhani", 'sans-serif'],
+
       }
     },
 
