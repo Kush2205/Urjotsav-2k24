@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-
+import background from "../assets/Images/Mainbg.jpg"
 export default function EventsCard(props) {
     const imgRef = useRef(null);
     const textRef = useRef(null);

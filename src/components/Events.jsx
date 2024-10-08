@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import EventsCard from './EventsCard';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Carousel } from 'react-responsive-carousel';
-
+import EventCategory from './EventCategory';
 export default function Events(props) {
     const navigate = useNavigate();
 
