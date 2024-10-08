@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import background from '../assets/Images/Mainbg.jpg';
 import gsap from 'gsap';
-
+import background from "../assets/Images/Mainbg.jpg"
 export default function EventsCard({onClick}) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
@@ -12,18 +11,42 @@ export default function EventsCard({onClick}) {
         const textElement = textRef.current;
         const outerDivElement = outerDivRef.current;
 
+        const neonGlowStyle = {
+            boxShadow: '0 0 30px rgba(45,143,184, 0.8), 0 0 30px rgba(45,143,184, 0.6), 0 0 30px rgba(45,143,184, 0.4)',
+            backdropFilter: 'blur(10px)' 
+        };
+
         const handleMouseEnter = () => {
             const tl = gsap.timeline();
-            tl.to(imgElement, { scale: 0.6, y: -imgElement.offsetHeight / 5, opacity: 1, borderColor: 'white', borderWidth: '5px', duration: 0.5 })
-              .to(textElement, { y: -190, opacity: 1, duration: 0.5 }, 0)
-              .to(outerDivElement, { borderColor: 'white', borderWidth: '3px', duration: 0.2 }, 0);
+            tl.to(imgElement, {
+                scale: 0.6,
+                y: -imgElement.offsetHeight / 5,
+                duration: 0.5,
+            })
+            .to(textElement, { y: -40, opacity: 1, duration: 0.5 }, 0)
+            .to(outerDivElement, { 
+                borderColor: 'transparent',
+                borderWidth: '3px',
+                duration: 0.2,
+                boxShadow: neonGlowStyle.boxShadow,
+                backdropFilter: neonGlowStyle.backdropFilter
+            }, 0);
         };
 
         const handleMouseLeave = () => {
             const tl = gsap.timeline();
-            tl.to(imgElement, { scale: 1, y: 0, opacity: 0.85, borderColor: 'transparent', borderWidth: '0px', duration: 0.5 })
-              .to(textElement, { y: 0, opacity: 0, duration: 0.5 }, 0)
-              .to(outerDivElement, { borderWidth:0, duration: 0.2 }, 0);
+            tl.to(imgElement, {
+                scale: 1,
+                y: 0,
+                duration: 0.5,
+            })
+            .to(textElement, { y: '100%', opacity: 0, duration: 0.5 }, 0)
+            .to(outerDivElement, {
+                borderWidth: 0,
+                duration: 0.2,
+                boxShadow: 'none',
+                backdropFilter: 'none'
+            }, 0);
         };
 
         const handleImageLoad = () => {
@@ -57,6 +80,9 @@ export default function EventsCard({onClick}) {
                         Hover Text
                     </div>
                 </div>
+            </div>
+            <div className='mt-4 text-center text-white opacity-[100%]'>
+                {sname}
             </div>
         </>
     );
