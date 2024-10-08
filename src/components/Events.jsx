@@ -1,8 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import EventsCard from './EventsCard';
-import EventCategory from './EventCategory';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Carousel } from 'react-responsive-carousel';
 
 export default function Events(props) {
@@ -34,9 +33,8 @@ export default function Events(props) {
                 </div>
             </Carousel>
         </div>
-          
-          
-         */}
-         <EventCategory/>
-    </>)
+          */ } 
+          <EventCategory/>
+        </>
+    )
 }

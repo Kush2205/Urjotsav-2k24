@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import background from "../assets/Images/Mainbg.jpg"
-export default function EventsCard({onClick}) {
+
+export default function EventsCard(props) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
@@ -73,16 +73,13 @@ export default function EventsCard({onClick}) {
 
     return (
         <>
-            <div onClick={onClick} className='flex cursor-pointer justify-center w-full'>
+            <div className='flex justify-center w-full'>
                 <div ref={outerDivRef} className='relative p-2 rounded-xl'>
                     <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[535px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
                     <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>
                         Hover Text
                     </div>
                 </div>
-            </div>
-            <div className='mt-4 text-center text-white opacity-[100%]'>
-                {sname}
             </div>
         </>
     );
