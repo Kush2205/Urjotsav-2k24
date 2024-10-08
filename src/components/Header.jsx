@@ -7,7 +7,7 @@ export default function Header(props) {
     return (
         <>
             <div className='flex justify-between w-full fixed top-0 z-[1000]'>
-                <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+                <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16 shadow-neon' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                     <Link to=''>
                         <div className='relative group hover:scale-[1.2] transition-all'>
                             Home
@@ -30,7 +30,7 @@ export default function Header(props) {
                 <div>
                     <img src={Earth} alt='earth' className='animate-spin-slow w-40' />
                 </div>
-                <div className='flex rounded-l-full h-16 px-5 items-center text-white w-full justify-evenly gap-20' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+                <div className='flex rounded-l-full h-16 px-5 items-center text-white w-full justify-evenly gap-20 shadow-neon' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                     <Link to='Events'>
                         <div className='relative group hover:scale-[1.2] transition-all'>
                             Events
@@ -49,8 +49,11 @@ export default function Header(props) {
                     </div>
                 </div>
             </div>
-           
-           
+            <style >{`
+                .shadow-neon {
+                    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.7);
+                }
+            `}</style>
         </>
     );
 }

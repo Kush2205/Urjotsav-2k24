@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import background from '../assets/Images/Mainbg.jpg';
 import gsap from 'gsap';
 
-export default function EventsCard(props) {
+export default function EventsCard({onClick}) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
@@ -50,7 +50,7 @@ export default function EventsCard(props) {
 
     return (
         <>
-            <div className='flex justify-center w-full'>
+            <div onClick={onClick} className='flex cursor-pointer justify-center w-full'>
                 <div ref={outerDivRef} className='relative p-2 rounded-xl'>
                     <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[535px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
                     <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>

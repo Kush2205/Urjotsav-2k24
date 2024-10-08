@@ -38,7 +38,10 @@ export default {
       fontFamily:{
         Sankofa:["Sankofa Display","sans-serif"],
         Megrim:["Megrim","sans-serif"],
-        Jost:["Jost","sans-serif"]
+        Jost:["Jost","sans-serif"],
+       Rajdhani:["Rajdhani","sans-serif"],
+      Orbitron:["Orbitron","sans-serif"],
+       
       }
     },
 
