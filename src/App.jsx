@@ -9,7 +9,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import Ambassador from './components/Ambassador';
 import Sponsors from './components/Sponsors';
-
+import EventCategory from './components/EventCategory';
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
           <Route index element={<Home/>}/>
             <Route path="contact" element={<Contact />} />
             <Route path="Events" element={<Events />} />
+            <Route path="/event/:eventId" element={<EventCategory />} />
             <Route path="About" element={<About />} />
             <Route path="Gallery" element={<Gallery />} />
             <Route path="Ambassadors" element={<Ambassador/>} />

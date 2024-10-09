@@ -1,10 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import EventsCard from './EventsCard';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Carousel } from 'react-responsive-carousel';
 import EventCategory from './EventCategory';
-
 export default function Events(props) {
+    const navigate = useNavigate();
+
+    const handleEventClick = (eventId) => {
+        navigate(`/event/${eventId}`);
+    };
+
     return (
         <>
            
@@ -27,8 +33,8 @@ export default function Events(props) {
                 </div>
             </Carousel>
         </div>
-          
+          */ } 
           <EventCategory/>
-         */}
-    </>)
+        </>
+    )
 }

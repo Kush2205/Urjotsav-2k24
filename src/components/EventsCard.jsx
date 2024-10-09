@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-
-export default function EventsCard({ image, text, sname }) {
+import background from "../assets/Images/Mainbg.jpg"
+export default function EventsCard(props) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
@@ -72,29 +72,15 @@ export default function EventsCard({ image, text, sname }) {
     }, []);
 
     return (
-        <div className='flex flex-col items-center w-full px-4 py-6'>
-            <div 
-                ref={outerDivRef} 
-                className='relative rounded-xl overflow-hidden border-0'
-                style={{ width: '300px', height: '250px' }} // Fixed width and height for consistency
-            >
-                <img 
-                    ref={imgRef} 
-                    src={image} 
-                    alt='background' 
-                    className='w-full h-full object-cover' 
-                />
-                <div 
-                    ref={textRef} 
-                    className='absolute bottom-0 left-5 right-0 text-wrap w-[250px] text-center text-white opacity-0'
-                    style={{ transform: 'translateY(100%)' }} // Start below the image
-                >
-                    {text}
+        <>
+            <div className='flex justify-center w-full'>
+                <div ref={outerDivRef} className='relative p-2 rounded-xl'>
+                    <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[535px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
+                    <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>
+                        Hover Text
+                    </div>
                 </div>
             </div>
-            <div className='mt-4 text-center text-white opacity-[100%]'>
-                {sname}
-            </div>
-        </div>
+        </>
     );
 }

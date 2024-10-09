@@ -21,7 +21,7 @@ const Layout = () => {
       <div className='relative z-20'>
         <Header />
         <Outlet />
-        <Footer />
+       <Footer/>
       </div>
     </div>
   );
