@@ -22,7 +22,7 @@ import waffle from "../assets/waffle.jpg";
 import kwikpic from "../assets/kwikpic.jpg";
 
 
-export default function sponsors() {
+export default function Sponsors() {
   return (
     <>
     <div className="md:mt-16 mt-0 "><h3 className="font-Space text-center font-semibold text-4xl mb-20 md:text-6xl lg:text-8xl text-white ">Past Sponsors</h3></div>

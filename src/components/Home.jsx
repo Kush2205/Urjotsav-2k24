@@ -1,6 +1,6 @@
 import React from 'react';
 import bgv from '../assets/bgvid.mp4';
-import Sponsors from '../components/sponsors';
+import Sponsors from './Sponsors';
 import Team from '../components/wordfromteam';
 import Text from '../components/urjotsav_text';
 import Speakers from '../components/Speakers';
