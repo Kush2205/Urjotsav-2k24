@@ -73,9 +73,9 @@ export default function EventsCard(props) {
 
     return (
         <>
-            <div className='flex justify-center w-full'>
+            <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px]'>
                 <div ref={outerDivRef} className='relative p-2 rounded-xl'>
-                    <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[535px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
+                    <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[350px] sm:h-[400px] lg:h-[440px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
                     <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>
                         Hover Text
                     </div>

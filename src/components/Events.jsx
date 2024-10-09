@@ -14,27 +14,27 @@ export default function Events(props) {
     return (
         <>
            
-            {/* <div className='mt-20'>
-            <Carousel showThumbs={false} infiniteLoop useKeyboardArrows={true} >
-                <div className="flex justify-around mx-10 gap-x-32 ">
+            <div className='mt-20 pt-10 mb-32'>
+            <h1 className='text-white font-bold text-5xl text-center pb-8'>Events</h1>
+            <Carousel showThumbs={false} infiniteLoop useKeyboardArrows={true} className='px-4' >
+                <div className="flex flex-col items-center md:flex-row justify-center md:mx-10 lg:gap-x-20 py-8">
                     <EventsCard />
                     <EventsCard />
                     <EventsCard />
                 </div>
-                <div className="flex justify-around mx-10 gap-x-32">
+                <div className="flex flex-col items-center md:flex-row justify-center md:mx-10 lg:gap-x-20 py-8">
                     <EventsCard />
                     <EventsCard />
                     <EventsCard />
                 </div>
-                <div className="flex justify-around mx-10 gap-x-32">
+                <div className="flex flex-col items-center md:flex-row justify-center md:mx-10 lg:gap-x-20 py-8">
                     <EventsCard />
                     <EventsCard />
                     <EventsCard />
                 </div>
             </Carousel>
         </div>
-          */ } 
-          <EventCategory/>
+          {/* <EventCategory/> */}
         </>
     )
 }
