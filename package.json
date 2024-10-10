@@ -13,11 +13,13 @@
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.1",
     "clsx": "^2.1.1",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.5.4",
     "pure-react-carousel": "^1.30.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
+    "react-intersection-observer": "^9.13.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.26.1",
     "react-slick": "^0.30.2",
@@ -37,6 +39,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.44",
     "tailwindcss": "^3.4.10",
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "vite-plugin-imagemin": "^0.6.1"
   }
 }
