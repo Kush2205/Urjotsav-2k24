@@ -9,6 +9,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import Ambassador from './components/Ambassador';
 import Sponsors from './components/Sponsors';
+import Team from './components/Team';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
             <Route path="Gallery" element={<Gallery />} />
             <Route path="Ambassadors" element={<Ambassador/>} />
             <Route path='Sponsors' element={<Sponsors/>} />
+            <Route path='team' element={<Team/>} />
+
         </Route>
       </Routes>
     </Router>
