@@ -4,17 +4,24 @@ import image from "../assets/Images/Mainbg.jpg";
 import border from "../assets/Images/Group 22.svg";
 import bg from "../assets/Images/image.png";
 import images from "../jsons/images";
-import { useParams } from "react-router-dom";
+
 export default function EventCategory({
   buttons = [1, 2, 3],
-  date,
-  venue,
-  duration,
-  detailsContent,
+  dates = ["DATE 1", "DATE 2", "DATE 3"],
+  venues = ["VENUE 1", "VENUE 2", "VENUE 3"],
+  durations = ["DURATION 1", "DURATION 2", "DURATION 3"],
+  detailsContent =  ["DETAILS 1", "DETAILS 2", "DETAILS 3"],
   titles = ["TITLE 1", "TITLE 2", "TITLE 3"],
+  rulebooks = ["RULEBOOK 1", "RULEBOOK 2", "RULEBOOK 3"],
+  numbers =["11111111", "11111111", "11111111"] ,
+  emails = ["email1", "email2", "email3"],
+  prizeMoney = ["1000", "2000", "3000"],
+  registerLinks = ["link1", "link2", "link3"],
+  knowMoreLinks = ["link1", "link2", "link3"],
+  
 }) {
 
-        const { eventId } = useParams();  
+       
 
   const [activeButton, setActiveButton] = useState(null);
   const [content, setContent] = useState("Hello");
@@ -22,7 +29,13 @@ export default function EventCategory({
   const [title, setTitle] = useState(titles[0]);
   const contentRef = useRef(null);
   const titleRef = useRef(null);
-
+   const [date, setDate] = useState(dates[0]);
+   const [venue, setVenue] = useState(venues[0]);
+    const [duration, setDuration] = useState(durations[0]);
+    const [rulebook, setRulebook] = useState(rulebooks[0]);
+    const [phone, setPhone] = useState(numbers[0]);
+    const [email, setEmail] = useState(emails[0]);
+    const [prize, setPrize] = useState(prizeMoney[0]);
   const handleButtonClick = (button) => {
     if (contentRef.current) {
       gsap.to(contentRef.current, {
@@ -45,7 +58,7 @@ export default function EventCategory({
                   <div className="mt-5 font-Orbitron  font-extralight">
                     Duration: {duration}
                   </div>
-                  <div>{detailsContent}</div>
+                 
                 </div>
                   
                 </>
@@ -57,21 +70,7 @@ export default function EventCategory({
                   <div className="flex flex-col h-72">
                     <div className="flex-1 text-md sm:text-2xl md:text-2xl lg:text-xl font-Orbitron sm:p-5 p-2 overflow-y-auto text-white">
                       <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Alias quae facilis, exercitationem quos
-                        necessitatibus sit beatae, deleniti voluptatem magni quo
-                        fugit aliquid aspernatur, eligendi consequuntur vitae
-                        omnis facere fugiat deserunt pariatur reiciendis amet
-                        blanditiis? Repudiandae optio quia esse nemo doloremque,
-                        tempora natus temporibus illo, unde dolores placeat vel
-                        cum? Itaque accusantium autem velit, illo quam suscipit
-                        voluptate nesciunt illum quia repellendus sequi totam
-                        ratione repudiandae, aliquam et eaque facilis. Aut,
-                        consequatur? Ex fugit, numquam est quaerat non
-                        accusantium, veniam pariatur, eos dolores consequatur
-                        magni illum blanditiis explicabo soluta porro dicta?
-                        Tenetur, architecto error provident tempore nam quos a
-                        odit quo.
+                       {rulebook}
                       </p>
                     </div>
                     <div className="flex pt-5 w-full b justify-center ">
@@ -89,8 +88,8 @@ export default function EventCategory({
                 <div className="p-5 font-Orbitron text-2xl sm:text-2xl md:text-3xl lg:text-4xl flex flex-col gap-y-2">
                   <div className=" font-extralight">Contact Us</div>
                   <div className="  font-extralight">
-                    <p>Phone: 1234567890</p>
-                    <p>Email: </p>
+                    <p>Phone: {phone}</p>
+                    <p>Email: {email} </p>
                   </div>
                 </div>
                
@@ -104,9 +103,16 @@ export default function EventCategory({
     }
   };
 
-  const handleDiv2Click = (index, button) => {
+  const handleDiv2Click = (index) => {
     setBgImage(images.bgimages[index+1]);
     setTitle(titles[index]);
+    setDate(dates[index]);
+    setVenue(venues[index]);
+    setDuration(durations[index]);
+    setPhone(numbers[index]);
+    setEmail(emails[index]);
+    setPrize(prizeMoney[index]);
+    setRulebook(rulebooks[index]);
   };
 
   useEffect(() => {
@@ -167,7 +173,7 @@ export default function EventCategory({
                 alt=""
               />
               <div className="text-white font-Orbitron mt-4 sm:mt-10 lg:mt-20 text-center font-extralight text-xl lg:text-3xl">
-                Prize Money : XXXX
+                Prize Money : {prize}
               </div>
               <div className="lg:w-full lg:flex lg:justify-center lg:mt-5 hidden">
                 <button className="bg-[#00000029] font-Rajdhani text-white FONT-BOLD rounded-md px-5 py-3 hover:-translate-y-1 hover:text-white transition-all duration-200 relative neon-button">

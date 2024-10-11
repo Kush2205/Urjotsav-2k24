@@ -45,7 +45,7 @@ export default function Header() {
 
                     {/* Right Section */}
                     <div className='hidden lg:flex rounded-l-full h-16 px-5 items-center text-white w-full justify-evenly gap-20' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-                        <Link to='event'>
+                        <Link to='Events'>
                             <div className='relative group hover:scale-[1.2] transition-all'>
                                 Events
                                 <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>

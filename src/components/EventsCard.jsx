@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import background from "../assets/Images/Mainbg.jpg"
-export default function EventsCard(props) {
+import background from "../assets/Images/Mainbg.jpg";
+
+export default function EventsCard({serialNum, eventNumber, eventName }) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
@@ -13,7 +14,7 @@ export default function EventsCard(props) {
 
         const neonGlowStyle = {
             boxShadow: '0 0 30px rgba(45,143,184, 0.8), 0 0 30px rgba(45,143,184, 0.6), 0 0 30px rgba(45,143,184, 0.4)',
-            backdropFilter: 'blur(10px)' 
+            backdropFilter: 'blur(10px)'
         };
 
         const handleMouseEnter = () => {
@@ -24,7 +25,7 @@ export default function EventsCard(props) {
                 duration: 0.5,
             })
             .to(textElement, { y: -40, opacity: 1, duration: 0.5 }, 0)
-            .to(outerDivElement, { 
+            .to(outerDivElement, {
                 borderColor: 'transparent',
                 borderWidth: '3px',
                 duration: 0.2,
@@ -71,13 +72,17 @@ export default function EventsCard(props) {
         };
     }, []);
 
+    const handleClick = () => {
+        window.location.href =`/events-category-${serialNum}` ; 
+    };
+
     return (
         <>
             <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px]'>
-                <div ref={outerDivRef} className='relative p-2 rounded-xl'>
+                <div onClick={handleClick} ref={outerDivRef} className='relative p-2 rounded-xl'>
                     <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[350px] sm:h-[400px] lg:h-[440px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
                     <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>
-                        Hover Text
+                        {eventName}
                     </div>
                 </div>
             </div>
