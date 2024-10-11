@@ -9,6 +9,9 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import Ambassador from './components/Ambassador';
 import Sponsors from './components/Sponsors';
+import Team from './components/Team';
+
+
 import EventCategory1 from './components/EventCategory1';
 import EventCategory2 from './components/EventCategory2';
 import EventCategory3 from './components/EventCategory3';
@@ -36,6 +39,8 @@ function App() {
             <Route path="Gallery" element={<Gallery />} />
             <Route path="Ambassadors" element={<Ambassador/>} />
             <Route path='Sponsors' element={<Sponsors/>} />
+            <Route path='team' element={<Team/>} />
+
         </Route>
       </Routes>
     </Router>
