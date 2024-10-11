@@ -18,7 +18,7 @@ export default function Header() {
                 <div className='hidden lg:flex justify-between w-full fixed top-0 left-0 z-[1000] bg-transparent'>
                     {/* Left Section */}
                     <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-                        <Link to=''>
+                        <Link to='/'>
                             <div className='relative group hover:scale-[1.2] transition-all'>
                                 Home
                                 <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
@@ -57,10 +57,12 @@ export default function Header() {
                                 <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
                             </div>
                         </Link>
+                        <Link to="team">
                         <div className='relative group hover:scale-[1.2] transition-all'>
-                            Speakers
+                            Team
                             <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
                         </div>
+                        </Link>
                     </div>
                 </div>
 
