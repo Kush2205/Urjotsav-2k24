@@ -36,6 +36,28 @@ export default function EventCategory({
     const [phone, setPhone] = useState(numbers[0]);
     const [email, setEmail] = useState(emails[0]);
     const [prize, setPrize] = useState(prizeMoney[0]);
+
+
+  useEffect(()=>{
+    setActiveButton('details');
+    setContent(
+      <>
+      <div className="p-5 text-2xl sm:text-2xl md:text-3xl lg:text-4xl">
+      <div className="">
+          <h1 className=" font-Orbitron font-extralight">Date: <span className="text-[#cbcbcb] pl-2 text-[30px] ">{date} </span></h1>
+        </div>
+        <div className="mt-5 font-Orbitron  font-extralight">
+          Venue:  <span className="text-[#cbcbcb] pl-2 text-[30px] ">{venue}</span>
+        </div>
+        <div className="mt-5 font-Orbitron  font-extralight">
+          Duration:<span className="text-[#cbcbcb] pl-2 text-[30px] "> {duration}</span>
+        </div>
+       
+      </div>
+        
+      </>
+    );
+  },[title])  
   const handleButtonClick = (button) => {
     if (contentRef.current) {
       gsap.to(contentRef.current, {
@@ -95,8 +117,7 @@ export default function EventCategory({
                
               </>);
               break;
-            default:
-              setContent("Hello");
+            
           }
         },
       });
@@ -104,6 +125,7 @@ export default function EventCategory({
   };
 
   const handleDiv2Click = (index) => {
+    // Update state first to reflect immediately on click
     setBgImage(images.bgimages[index+1]);
     setTitle(titles[index]);
     setDate(dates[index]);
@@ -113,8 +135,17 @@ export default function EventCategory({
     setEmail(emails[index]);
     setPrize(prizeMoney[index]);
     setRulebook(rulebooks[index]);
-  };
 
+    // Ensure GSAP animations occur after state updates
+    if (titleRef.current) {
+        gsap.fromTo(
+            titleRef.current,
+            { opacity: 0 },
+            { opacity: 1, duration: 0.9, ease: "power1.in" }
+        );
+    }
+};
+ 
   useEffect(() => {
     if (contentRef.current) {
       gsap.fromTo(
@@ -137,7 +168,7 @@ export default function EventCategory({
 
   return (
     <>
-      <div className="relative flex flex-col lg:flex-row w-full lg:h-screen background">
+      <div className="relative flex flex-col lg:flex-row pb-8 lg:min-h-screen w-full background">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-70 transition-background"
           style={{ backgroundImage: `url(${bgImage})` }}
@@ -147,7 +178,7 @@ export default function EventCategory({
             <div className="text-white w-fit mx-[10px] sm:text-left lg:hidden">
               <h1
                 ref={titleRef}
-                className="font-bold mb-4 text-2xl  lg:text-6xl mt-5 lg:mt-10"
+                className="font-bold mb-4 text-2xl lg:text-6xl mt-5 lg:mt-10"
               >
                 {title}
               </h1>
@@ -162,7 +193,7 @@ export default function EventCategory({
                 </button>
               </div>
             </div>
-            <div className="relative w-[150px] h-[150px] mx-[10px] lg:w-[300px] lg:h-[300px]">
+            <div className="relative w-[150px] h-[150px] mx-[10px] lg:w-[300px] lg:h-[300px] mt-40">
               <div
                 className="sm:absolute sm:scale-[1.2] sm:inset-0 sm:bg-cover sm:bg-center sm:flex hidden"
                 style={{ backgroundImage: `url(${border})` }}
@@ -214,7 +245,7 @@ export default function EventCategory({
                 </div>
               </div>
 
-              <div className="mt-10 lg:mt-28">
+              <div className="mt-10">
                 <div className="flex justify-evenly w-full mb-10 font-extralight">
                   <button
                     className={`bg-[#00000029] font-Rajdhani rounded-md px-5 py-3 hover:-translate-y-1 hover:text-white transition-all duration-200 relative ${
@@ -251,7 +282,7 @@ export default function EventCategory({
                   </button>
                 </div>
 
-                <div className="h-80 bg-[#0b0b0be3] rounded-2xl opacity-90 text-white flex border-2 border-[#adb5bd] relative overflow-hidden">
+                <div className="min-h-[300px] bg-[#0b0b0be3] rounded-2xl opacity-90 text-white flex border-2 py-3 border-[#adb5bd] relative overflow-hidden">
                   <span ref={contentRef} className="overflow-y-auto w-full h-full">
                     {content}
                   </span>
