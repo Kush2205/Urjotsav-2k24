@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Spaceage';
+    src: url('../src/Fonts/space_age/space\ age.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apello';
+    src: url('../src/Fonts/ApelloSpace-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Spaceship';
+    src: url('../src/Fonts/spaceship2100.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Techapture';
+    src: url('../src/Fonts/TECHNO\ CAPTURE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

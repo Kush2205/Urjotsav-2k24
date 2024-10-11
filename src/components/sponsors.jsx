@@ -1,8 +1,7 @@
-
 "use client";
 
 import React from "react";
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "../UI/infinite-moving-cards";
 import royalenfield from "../assets/re.png";
 import hp from "../assets/hp.jpg";
 import bharat from "../assets/bharat.jpg";
@@ -22,12 +21,12 @@ import waffle from "../assets/waffle.jpg";
 import kwikpic from "../assets/kwikpic.jpg";
 
 
-export default function sponsors() {
+export default function Sponsors() {
   return (
     <>
-    <div className="md:mt-16 mt-o "><h3 className="font-Megrim text-center font-semibold text-4xl mb-20 md:text-6xl lg:text-8xl text-white ">Past Sponsors</h3></div>
+    <div className="md:mt-16 mt-0 "><h3 className="font-Space text-center font-semibold text-4xl mb-20 md:text-6xl lg:text-8xl text-white ">Past Sponsors</h3></div>
     <div
-      className="h-[20rem] relative rounded-md flex flex-col antialiased  items-center justify-center overflow-hidden">
+      className="h-[20rem] font-Rajdhani relative rounded-md flex flex-col antialiased  items-center justify-center overflow-hidden">
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
     </div>
     </>
