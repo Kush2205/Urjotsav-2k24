@@ -57,15 +57,15 @@ export default function EventCategory({
     setActiveButton('details');
     setContent(
       <>
-      <div className="p-5 text-2xl sm:text-2xl md:text-3xl lg:text-4xl">
+      <div className="p-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
       <div className="">
-          <h1 className=" font-Orbitron font-extralight">Date: <span className="text-[#cbcbcb] pl-2 text-[30px] ">{date} </span></h1>
+          <h1 className=" font-Orbitron font-extralight">Date: <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px]">{date} </span></h1>
         </div>
         <div className="mt-5 font-Orbitron  font-extralight">
-          Venue:  <span className="text-[#cbcbcb] pl-2 text-[30px] ">{venue}</span>
+          Venue:  <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px] ">{venue}</span>
         </div>
         <div className="mt-5 font-Orbitron  font-extralight">
-          Duration: <span className="text-[#cbcbcb] pl-2 text-[30px] "> {duration}</span>
+          Duration: <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px] "> {duration}</span>
         </div>
        
       </div>
@@ -85,15 +85,15 @@ export default function EventCategory({
             case "details":
               setContent(
                 <>
-                <div className="p-5 text-2xl sm:text-2xl md:text-3xl lg:text-4xl">
+                <div className="p-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                 <div className="">
-                    <h1 className=" font-Orbitron font-extralight">Date: <span className="text-[#cbcbcb] pl-2 text-[30px] ">{date} </span></h1>
+                    <h1 className=" font-Orbitron font-extralight">Date: <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px]">{date} </span></h1>
                   </div>
                   <div className="mt-5 font-Orbitron  font-extralight">
-                    Venue:  <span className="text-[#cbcbcb] pl-2 text-[30px] ">{venue}</span>
+                    Venue:  <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px] ">{venue}</span>
                   </div>
                   <div className="mt-5 font-Orbitron  font-extralight">
-                    Duration:  <span className="text-[#cbcbcb] pl-2 text-[30px] "> {duration}</span>
+                    Duration:  <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px]"> {duration}</span>
                   </div>
                  
                 </div>
@@ -123,11 +123,11 @@ export default function EventCategory({
               break;
             case "contact":
               setContent(<>
-                <div className="p-5 font-Orbitron text-2xl sm:text-2xl md:text-3xl lg:text-4xl flex flex-col gap-y-2">
-                  <div className=" font-extralight mb-2">Contact Us</div>
+                <div className="p-5 font-Orbitron text-[22px] sm:text-2xl md:text-3xl lg:text-4xl flex flex-col gap-y-2">
+                  <div className="font-extralight mb-4 sm:mb-2 pb-2 border-b-2">Contact Us</div>
                   <div className="  font-extralight">
-                    <p>Name: <span className="text-[#cbcbcb] pl-2 text-[30px] "> {email}</span> </p>
-                    <p>Phone:  <span className="text-[#cbcbcb] pl-2 text-[30px] "> {phone}</span></p>
+                    <p className="pb-1">Name: <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px]"> {email}</span> </p>
+                    <p>Phone:  <span className="text-[#cbcbcb] pl-2 text-[25px] sm:text-[30px] "> {phone}</span></p>
                   </div>
                 </div>
                
@@ -193,7 +193,7 @@ export default function EventCategory({
           style={{ backgroundImage: `url(${bgImage})` }}
         ></div>
         <div className="relative flex flex-col lg:flex-row w-full h-full">
-          <div className="order-2 lg:order-1 h-full w-full sm:justify-evenly sm:-mx-[50px] lg:-mx-0 lg:justify-center lg:w-[45%] flex lg:items-center justify-evenly mt-10 lg:mt-0">
+          <div className="order-2 lg:order-1 h-full w-full sm:justify-evenly sm:-mx-[50px] lg:-mx-0 lg:justify-center lg:w-[45%] flex flex-col lg:flex-row items-center lg:items-center justify-evenly mt-10 lg:mt-0">
             <div className="text-white w-fit mx-[10px] sm:text-left lg:hidden">
               <h1
                 ref={titleRef}
@@ -212,7 +212,7 @@ export default function EventCategory({
                 </button>
               </div>
             </div>
-            <div className="relative w-[150px] h-[150px] mx-[10px] lg:w-[300px] lg:h-[300px] mt-40">
+            <div className="relative w-[80%] sm:w-[150px] sm:h-[150px] mx-[10px] lg:w-[300px] lg:h-[300px] mt-10 lg:mt-40">
               <div
                 className="sm:absolute sm:scale-[1.2] sm:inset-0 sm:bg-cover sm:bg-center sm:flex hidden"
                 style={{ backgroundImage: `url(${border})` }}
@@ -222,11 +222,11 @@ export default function EventCategory({
                 src={eventImg}
                 alt=""
               />
-              <div className="text-white font-Orbitron mt-4 sm:mt-10 lg:mt-20 text-center font-extralight text-xl lg:text-3xl">
+              <div className="text-white font-Orbitron mt-4 flex items-center justify-center sm:mt-10 lg:mt-20 text-center font-extralight text-3xl">
                 Prize Money : <span className="text-[#cbcbcb] pl-2 text-[30px]">{prize}</span>
               </div>
               <div className="lg:w-full lg:flex lg:justify-center lg:mt-5 hidden">
-                <a href={rulebookLink} target="_blank" rel="noopener noreferrer" className="bg-[#00000029] font-Rajdhani text-white FONT-BOLD rounded-md px-5 py-3 hover:-translate-y-1 hover:text-white transition-all duration-200 relative neon-button">
+                <a href={rulebookLink} target="_blank" rel="noopener noreferrer" className="bg-[#081e26b7] font-semibold text-2xl font-Rajdhani text-white FONT-BOLD rounded-md px-5 py-3 hover:-translate-y-1 hover:text-white transition-all duration-200 relative neon-button">
                   REGISTER
                   <span className="underline"></span>
                 </a>
@@ -234,7 +234,7 @@ export default function EventCategory({
             </div>
           </div>
 
-<div className="order-1 lg:order-2 div2 flex flex-row lg:flex-col sm:h-fit md:h-fit lg:w-[10%] space-x-4 lg:space-x-0 lg:space-y-4 gap-y-20 items-center  lg:justify-center justify-evenly mt-16 sm:mt-20 lg:mt-36 ml-2">
+<div className="order-1 lg:order-2 div2 flex flex-row lg:flex-col sm:h-fit md:h-fit lg:w-[10%] space-x-4 lg:space-x-0 lg:space-y-4 gap-y-20 items-center  lg:justify-center justify-evenly mt-20 mx-2 sm:mx-0 lg:mt-36 ml-2">
   {buttons.map((button, index) => (
     <div
       key={index}
@@ -257,7 +257,7 @@ export default function EventCategory({
 
 
 
-          <div className="order-3 lg:order-3 text-white flex flex-col justify-center w-full lg:w-[45%] h-full p-10 lg:p-0">
+          <div className="order-3 lg:order-3 text-white flex flex-col justify-center w-full lg:w-[45%] h-full p-4 lg:p-0">
             <div className="w-full lg:w-[80%] flex flex-col justify-start h-full mt-10 lg:mt-24 ml-0 lg:ml-10">
               <div className="lg:w-full lg:text-left lg:block sm:hidden hidden">
                 <h1
