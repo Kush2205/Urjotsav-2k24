@@ -13,6 +13,8 @@ import anmol from "../assets/anmol.jpg";
 import nishant from "../assets/nishant.jpg";
 import rishabh from "../assets/rishabh.jpg";
 import aditya from "../assets/aditya.jpg";
+import anish from "../assets/anish.jpeg";
+import vijit from "../assets/vijit.jpeg"
 
 
 export default function Contact() {
@@ -196,7 +198,7 @@ export default function Contact() {
                             <h3 className="text-[24px] text-zinc-200 font-semibold mb-3 mt-6 font-Jost uppercase">Event head</h3>
                             <div className="contact-card flex items-center mb-6">
                             <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
-                                    <img className='object-cover w-full h-full' src={rishikaImg} />
+                                    <img className='object-cover w-full h-full' src={anish} />
                                 </div>
                                 <div>
                                     <p className="text-xl font-medium">Anish Kumar</p>
@@ -218,7 +220,7 @@ export default function Contact() {
                             </div>
                             <div className="contact-card flex items-center mb-6">
                             <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
-                                    <img className='object-cover scale-[] w-full h-full' src={anmol} />
+                                    <img className='object-cover scale-[] w-full h-full' src={vijit} />
                                 </div>
                                 <div>
                                     <p className="text-xl font-medium">Vijit Singh</p>
