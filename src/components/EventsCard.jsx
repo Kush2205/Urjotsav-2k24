@@ -1,15 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-export default function EventsCard({ serialNum, eventNumber, eventName, imgURL }) {
+export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,Desc }) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
+    const textDescRef = useRef(null);
 
     useEffect(() => {
         const imgElement = imgRef.current;
         const textElement = textRef.current;
         const outerDivElement = outerDivRef.current;
+        const textDescElement = textDescRef.current;
 
         const neonGlowStyle = {
             boxShadow: '0 0 30px rgba(45,143,184, 0.8), 0 0 30px rgba(45,143,184, 0.6), 0 0 30px rgba(45,143,184, 0.4)',
@@ -30,7 +32,8 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL }
                 duration: 0.2,
                 boxShadow: neonGlowStyle.boxShadow,
                 backdropFilter: neonGlowStyle.backdropFilter
-            }, 0);
+            }, 0)
+            .to(textDescElement, { y: -40, opacity: 1, duration: 0.5 }, 0);
         };
 
         const removeHoverEffects = () => {
@@ -46,7 +49,8 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL }
                 duration: 0.2,
                 boxShadow: 'none',
                 backdropFilter: 'none'
-            }, 0);
+            }, 0)
+            .to(textDescElement, { y: '100%', opacity: 0, duration: 0.5 }, 0);
         };
 
         const handleMouseEnter = () => {
@@ -114,9 +118,15 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL }
                 />
                 <div
                     ref={textRef}
-                    className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px]'
+                    className='absolute top-[22rem] left-0 right-0 text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px]'
                 >
                     {eventName}
+                </div>
+                <div
+                    ref={textDescRef}
+                    className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[15px]'
+                >
+                    {Desc}
                 </div>
             </div>
         </div>

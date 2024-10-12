@@ -4,6 +4,7 @@ import EventsCard from './EventsCard';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import EventCategory from './EventCategory1';
+import background from "../assets/Images/Mainbg.jpg";
 
 export default function Events(props) {
 

@@ -18,6 +18,7 @@ import EventCategory3 from './components/EventCategory3';
 import EventCategory4 from './components/EventCategory4';
 import EventCategory5 from './components/EventCategory5';
 import EventCategory6 from './components/EventCategory6';
+
 function App() {
 
  
@@ -35,6 +36,7 @@ function App() {
             <Route path = '/events-category-4' element={<EventCategory4/>} />
             <Route path = '/events-category-5' element={<EventCategory5/>} />
             <Route path = '/events-category-6' element={<EventCategory6/>} />
+            
             <Route path="About" element={<About />} />
             <Route path="Gallery" element={<Gallery />} />
             <Route path="Ambassadors" element={<Ambassador/>} />
