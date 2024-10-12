@@ -104,7 +104,9 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
     }, []);
 
     const handleClick = () => {
-        window.location.href = `/events-category-${serialNum}`;
+        if(serialNum){
+            window.location.href = `/events-category-${serialNum}`;
+        }
     };
 
     return (
@@ -114,17 +116,17 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
                     ref={imgRef}
                     src={imgURL}
                     alt='background'
-                    className='w-[300px] h-[350px] sm:h-[400px] lg:h-[440px] rounded-2xl opacity-[0.9] border-0 border-transparent'
+                    className='w-[370px] h-[350px] sm:h-[400px] lg:h-[380px] rounded-2xl opacity-[0.9] border-0 border-transparent'
                 />
                 <div
                     ref={textRef}
-                    className='absolute top-[22rem] left-0 right-0 text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px]'
+                    className='text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px] pb-4'
                 >
                     {eventName}
                 </div>
                 <div
                     ref={textDescRef}
-                    className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[15px]'
+                    className='text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[15px] pb-8'
                 >
                     {Desc}
                 </div>

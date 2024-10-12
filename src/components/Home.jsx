@@ -37,7 +37,7 @@ export default function Home(props) {
                 {/* <Sponsors />
             </div> */}
 
-            <div className='h-auto md:pt-0 pt-[100px] md:h-[130vh] z-20 w-full lg:mb-[20rem] lg:ml-[5rem]'>
+            <div>
 
                 <Speakers />
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ankurImg from "../assets/ankur.jpg"
 import atulImg from "../assets/atul.jpg";
-import khushiImg from "../assets/khusi.jpg";
+import khushiImg from "../assets/khushi.jpg";
 import rishikaImg from "../assets/rishika.jpg";
 import ayushImg from "../assets/ayush.jpg"
 import arnavImg from "../assets/arnav.jpg";
@@ -11,6 +11,8 @@ import emailjs from '@emailjs/browser'
 import shubh from "../assets/shubh.jpg";
 import anmol from "../assets/anmol.jpg";
 import nishant from "../assets/nishant.jpg";
+import rishabh from "../assets/rishabh.jpg";
+import aditya from "../assets/aditya.jpg";
 
 
 export default function Contact() {
@@ -142,6 +144,18 @@ export default function Contact() {
                                     <p className="text-lg">+91-7991902068</p>
                                 </div>
                             </div>
+
+                            <div className="contact-card flex items-center mb-6">
+                            <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                    <img className='object-cover w-full h-full' src={atulImg} />
+                                </div>
+                                <div>
+                                    <p className="text-xl font-medium">Atul Panwar</p>
+                                    <p className="text-lg">+91-8306579717</p>
+                                </div>
+                            </div>
+
+                            <h3 className="text-[24px] text-zinc-200 font-semibold mb-3 font-Jost uppercase">Event Organizers</h3>
                             <div className="contact-card flex items-center mb-6">
                             <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
                                     <img className='object-cover w-full h-full' src={khushiImg}  />
@@ -153,16 +167,6 @@ export default function Contact() {
                             </div>
                             <div className="contact-card flex items-center mb-6">
                             <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
-                                    <img className='object-cover w-full h-full' src={atulImg} />
-                                </div>
-                                <div>
-                                    <p className="text-xl font-medium">Atul Panwar</p>
-                                    <p className="text-lg">+91-8306579717</p>
-                                </div>
-                            </div>
-                            <h3 className="text-[24px] text-zinc-200 font-semibold mb-3 mt-6 font-Jost uppercase">Event head</h3>
-                            <div className="contact-card flex items-center mb-6">
-                            <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
                                     <img className='object-cover w-full h-full' src={rishikaImg} />
                                 </div>
                                 <div>
@@ -170,6 +174,37 @@ export default function Contact() {
                                     <p className="text-lg">+91-8009477777</p>
                                 </div>
                             </div>
+                            <div className="contact-card flex items-center mb-6">
+                            <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                    <img className='object-cover w-full h-full' src={aditya} />
+                                </div>
+                                <div>
+                                    <p className="text-xl font-medium">Aditya Kumar</p>
+                                    <p className="text-lg">+91-6201828322</p>
+                                </div>
+                            </div>
+                            <div className="contact-card flex items-center mb-6">
+                                <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                    <img className='object-cover w-full h-full' src={arnavImg} />
+                                </div>
+                                <div>
+                                    <p className="text-xl font-medium">Arnav Sao</p>
+                                    <p className="text-lg">+91-7987057541</p>
+                                </div>
+                            </div>
+
+                            <h3 className="text-[24px] text-zinc-200 font-semibold mb-3 mt-6 font-Jost uppercase">Event head</h3>
+                            <div className="contact-card flex items-center mb-6">
+                            <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                    <img className='object-cover w-full h-full' src={rishikaImg} />
+                                </div>
+                                <div>
+                                    <p className="text-xl font-medium">Anish Kumar</p>
+                                    <p className="text-lg">+91-6206868057</p>
+                                </div>
+                            </div>
+
+
 
                             <h3 className="text-[24px] text-zinc-200 font-semibold mb-3 font-Jost uppercase">Sponsorship Heads</h3>
                             <div className="contact-card flex items-center mb-6">
@@ -186,8 +221,8 @@ export default function Contact() {
                                     <img className='object-cover scale-[] w-full h-full' src={anmol} />
                                 </div>
                                 <div>
-                                    <p className="text-xl font-medium">Anmol Shrivastava</p>
-                                    <p className="text-lg">+91-9301987494</p>
+                                    <p className="text-xl font-medium">Vijit Singh</p>
+                                    <p className="text-lg">+91-9919970486</p>
                                 </div>
                             </div>
                             <div className="contact-card flex items-center mb-6">
@@ -197,6 +232,15 @@ export default function Contact() {
                                 <div>
                                     <p className="text-xl font-medium">Nishant Nischal</p>
                                     <p className="text-lg">+91-9334340181</p>
+                                </div>
+                            </div>
+                            <div className="contact-card flex items-center mb-6">
+                            <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
+                                    <img className='object-cover scale-[] w-full h-full' src={anmol} />
+                                </div>
+                                <div>
+                                    <p className="text-xl font-medium">Anmol Shrivastava</p>
+                                    <p className="text-lg">+91-9301987494</p>
                                 </div>
                             </div>
 
@@ -215,11 +259,11 @@ export default function Contact() {
                             <h3 className="text-[24px] text-zinc-200 font-semibold mb-3 mt-6 font-Jost uppercase">Designing Team Head</h3>
                             <div className="contact-card flex items-center mb-6">
                                 <div className="profile-pic w-20 h-20 bg-gray-500 rounded-full mr-4 overflow-hidden">
-                                    <img className='object-cover w-full h-full' src={arnavImg} />
+                                    <img className='object-cover w-full h-full' src={rishabh} />
                                 </div>
                                 <div>
-                                    <p className="text-xl font-medium">Arnav Sao</p>
-                                    <p className="text-lg">+91-7987057541</p>
+                                    <p className="text-xl font-medium">Rishabh Kumar</p>
+                                    <p className="text-lg">+91-9167993467</p>
                                 </div>
                             </div>
                             </div>
