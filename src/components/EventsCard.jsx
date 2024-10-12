@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import background from "../assets/Images/Mainbg.jpg";
 
-export default function EventsCard({serialNum, eventNumber, eventName }) {
+export default function EventsCard({ serialNum, eventNumber, eventName,eventDesc, image }) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
@@ -73,19 +72,20 @@ export default function EventsCard({serialNum, eventNumber, eventName }) {
     }, []);
 
     const handleClick = () => {
-        window.location.href =`/events-category-${serialNum}` ; 
+        window.location.href = `/events-category-${serialNum}`;
     };
 
     return (
-        <>
-            <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px]'>
-                <div onClick={handleClick} ref={outerDivRef} className='relative p-2 rounded-xl'>
-                    <img ref={imgRef} src={background} alt='background' className='w-[300px] h-[350px] sm:h-[400px] lg:h-[440px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
-                    <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>
-                        {eventName}
-                    </div>
+        <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px]'>
+            <div onClick={handleClick} ref={outerDivRef} className='relative p-2 rounded-xl'>
+                <img ref={imgRef} src={image} alt='background' className='w-[300px] h-[350px] sm:h-[400px] lg:h-[440px] rounded-2xl opacity-[0.9] border-0 border-transparent' />
+                <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0'>
+                    {eventName}
+                </div>
+                <div ref={textRef} className='absolute bottom-0 left-0 right-0 text-center w-full text-white opacity-0 text-xl'>
+                    {eventDesc}
                 </div>
             </div>
-        </>
+        </div>
     );
 }
