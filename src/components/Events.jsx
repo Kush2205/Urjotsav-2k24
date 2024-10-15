@@ -5,7 +5,7 @@ import background from "../assets/Images/Mainbg.jpg";
 export default function Events(props) {
   return (
     <>
-      <div className="mt-20 pt-10 mb-32">
+      <div className="mt-20 pt-10 mb-32 p-5">
         <h1 className="text-white font-bold text-5xl text-center pb-8">
           Events
         </h1>
