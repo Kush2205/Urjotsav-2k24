@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <>
-            <div className='relative z-[1000]'>
+            <div className='relative z-[1000] font-Space'>
                 <div className='hidden lg:flex justify-between w-full fixed top-0 left-0 z-[1000] bg-transparent'>
                     <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                         <Link to='/'>
@@ -68,11 +68,11 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className={`lg:hidden fixed top-0 left-0 w-full h-auto bg-black text-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
-                    <div className='flex flex-col items-center py-4'>
-                        <button onClick={toggleMobileMenu} className='self-end p-4'>
+                <div className={`lg:hidden fixed top-0 left-0 w-full h-full bg-black text-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'} flex justify-center`}>
+                    <div className='flex flex-col items-center justify-center py-4 gap-4'>
+                        {/* <button onClick={toggleMobileMenu} className='self-end p-4'>
                             <FaTimes size={24} />
-                        </button>
+                        </button> */}
                         <Link to='' className='py-2' onClick={toggleMobileMenu}>
                             Home
                         </Link>

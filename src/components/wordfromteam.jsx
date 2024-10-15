@@ -3,15 +3,15 @@ import React from 'react';
 function WordFromTeam() {
   return (
     <>
-      <h2 className='text-white text-4xl md:text-5xl lg:text-6xl font-Space text-center mt-[10vh] md:mt-[15vh]  lg:mt-[20vh]'>
+      <h2 className='text-white text-4xl md:text-5xl uppercase lg:text-6xl font-Space text-center mt-[10vh] md:mt-[15vh]  lg:mt-[20vh]'>
         Word from our team
       </h2>
       <div className='flex flex-col md:flex-row justify-center items-center  gap-4 md:gap-[100px]  py-8'>
         <div className='w-full md:w-[45vw] lg:w-[35vw] h-[30vh] md:h-[40vh] lg:h-[50vh]'>
           <iframe
             className='md:w-full md:h-full w-[75%] h-[200px] mx-[10%] border-none'
-            src="https://www.youtube.com/embed/Vo8huF43CB4"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/psYAHKTup_s"
+            title="YouTube short video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>

@@ -10,8 +10,8 @@ function Theme() {
         <div className='w-full md:w-[45vw] lg:w-[35vw] h-[30vh] md:h-[40vh] lg:h-[50vh]'>
           <iframe
             className='md:w-full md:h-full w-[75%] h-[200px] mx-[10%] border-none'
-            src="https://www.youtube.com/embed/Vo8huF43CB4"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/psYAHKTup_s"
+            title="YouTube short video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>

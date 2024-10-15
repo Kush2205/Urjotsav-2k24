@@ -32,14 +32,14 @@ const teamMembers = [
   { id: 27,name:'Vijit Singh', role: 'Sponsorship Team',position:'Head',mail:'22ec3064@rgipt.ac.in', imgSrc: 'heads/Sponsorship/vijit.jpeg' },
   { id: 27,name:'Nishant Nischal', role: 'Sponsorship Team',position:'Head',mail:'22cs3042@rgipt.ac.in', imgSrc: 'heads/Sponsorship/Nishant Nischal_Sponsership Head_22CS3042.jpg' },
   { id: 27,name:'Anmol Shrivastava', role: 'Sponsorship Team',position:'Head',mail:'22ce3010@rgipt.ac.in', imgSrc: 'heads/Sponsorship/Anmol_Shrivastava.jpg' },
-  { id: 27,name:'Himanshu Jayant', role: 'Creativity Team',position:'Head',mail:'23cs2028@rgipt.ac.in', imgSrc: 'heads/Creativity/HIMANSHU_JAYANT.jpeg' },
-  { id: 27,name:'Yash Verma', role: 'Creativity Team',position:'Head',mail:'23cs2028@rgipt.ac.in', imgSrc: 'heads/Creativity/IMG_20240610_211657.jpg' },
+  { id: 27,name:'Himanshu Jayant', role: 'Creativity Team',position:'Head',mail:'22it3015@rgipt.ac.in', imgSrc: 'heads/Creativity/HIMANSHU_JAYANT.jpeg' },
+  { id: 27,name:'Yash Verma', role: 'Creativity Team',position:'Head',mail:'22it3059@rgipt.ac.in', imgSrc: 'heads/Creativity/IMG_20240610_211657.jpg' },
   { id: 27,name:'Prince Kumar', role: 'Logistics Team',position:'Head',mail:'22ce3054@rgipt.ac.in', imgSrc: 'heads/Logistics/Prince.jpg' },
   { id: 27,name:'Ritik Raushan', role: 'Logistics Team',position:'Head',mail:'22ce3044@rgipt.ac.in', imgSrc: 'heads/Logistics/Ritik.jpg' },
   { id: 27,name:'Anshu Priya', role: 'Outreach Team',position:'Head',mail:'22cs2020@rgipt.ac.in', imgSrc: 'heads/Outreach/Anshu.jpg' },
   { id: 27,name:'Aditya Kashyap', role: 'Outreach Team',position:'Head',mail:'22ce3005@rgipt.ac.in', imgSrc: 'heads/Outreach/arham.jpg' },
   // { id: 27,name:'Aditya Kumar', role: 'Photos and Videography Team',position:'Head',mail:'abc@rgipt.ac.in', imgSrc: 'heads/Photo&Videography/Aditya_Kumar.jpg' },
-  { id: 27,name:'Ujjwal Pratap Singh', role: 'Photos and Videography Team',position:'Head',mail:'abc@rgipt.ac.in', imgSrc: 'heads/Photo&Videography/image.png' },
+  { id: 27,name:'Ujjwal Kumar', role: 'Photos and Videography Team',position:'Head',mail:'22cs3064@rgipt.ac.in', imgSrc: 'heads/Photo&Videography/image.png' },
   
   { id: 27,name:'Ankur Kumar', role: 'Fest Coordinators',position:'Head',mail:'22cs3073@rgipt.ac.in', imgSrc: 'heads/fest-coordinator/ankur.jpg' },
   { id: 27,name:'Atul Panwar', role: 'Fest Coordinators',position:'Head',mail:'22it3012@rgipt.ac.in', imgSrc: 'heads/fest-coordinator/atul.jpg' },
@@ -49,6 +49,7 @@ const teamMembers = [
   { id: 27,name:'Aditya Kumar', role: 'Event Organizers',position:'Head',mail:'22it3002@rgipt.ac.in', imgSrc: 'heads/eventorganizers/aditya.jpg' },
   { id: 27,name:'Arnav Sao', role: 'Event Organizers',position:'Head',mail:'22it3009@rgipt.ac.in', imgSrc: 'heads/eventorganizers/arnav.jpg' },
 
+  { id: 27,name:'Aryan Kumar Singh', role: 'Social Media Team',position:'Head',mail:'22it3010@rgipt.ac.in', imgSrc: 'heads/socialmedia/aryan.jpg' },
 
 ];
 const Team = () => {
@@ -58,9 +59,9 @@ const Team = () => {
   <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
     Fest Coordinators
   </h1>
-  <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[40px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+  {/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[40px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
     HEADS
-  </h1>
+  </h1> */}
 
   {/* Grid layout for team members */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:gap-y-12 gap-8 sm:gap-6 justify-evenly mt-10 mb-12 transition-all duration-500 ease-in-out">
@@ -72,7 +73,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -107,9 +108,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Event Organizers
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[40px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20 ">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[40px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20 ">
   HEADS
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -122,7 +123,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -156,9 +157,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Sponsorship Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20 ">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20 ">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -171,7 +172,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -202,12 +203,12 @@ const Team = () => {
   </div>
 </div>
 <div className="w-[90%] mx-auto mt-4 mb-8">
-<h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
-  Event Management Team
+<h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold  break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+  Event Management and Logistics Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -220,7 +221,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -254,9 +255,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Technical Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -269,7 +270,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -352,9 +353,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Hospitality Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -367,7 +368,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -402,9 +403,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Designing Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -417,7 +418,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -454,9 +455,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Editorial Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -469,7 +470,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -518,7 +519,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -550,26 +551,23 @@ const Team = () => {
 </div>
 <div className="w-[90%] mx-auto mt-4 mb-8">
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
-  Logistics Team
+Social Media Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
-  {/* Grid layout for team members */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:gap-y-12 gap-8 sm:gap-6 justify-evenly mt-10 mb-12 transition-all duration-500 ease-in-out">
+  <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 sm:gap-y-12 gap-8 sm:gap-6 justify-evenly mt-10 mb-12 transition-all duration-500 ease-in-out">
   {teamMembers
-      .filter((member) => member.role === "Logistics Team")
+      .filter((member) => member.role === "Social Media Team")
       .map((member, index, array) => (
         <div
           key={member.id}
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
-          {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
-              {/* Image with hover effect */}
               <img
                 className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full transform transition-transform duration-[500ms] ease-in-out scale-[1.2] sm:scale-[1] sm:group-hover:scale-[1.2]"
                 src={member.imgSrc}
@@ -577,9 +575,8 @@ const Team = () => {
               />
             </div>
 
-            {/* Hover div with background image */}
             <div className={`min-w-[200px] absolute z-0 top-1/2 left-0 transform  sm:-translate-x-[5rem] lg:-translate-x-[5rem] -translate-y-1/2 
-              ${/* Default visible on mobile screens */ 'scale-100 opacity-100'} 
+              scale-100 opacity-100
               sm:opacity-0 sm:scale-0 
               translate-x-[4rem] sm:group-hover:translate-x-[7rem] lg:group-hover:translate-x-[5rem] 
               group-hover:scale-100 group-hover:opacity-100 
@@ -601,9 +598,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Outreach Team
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -616,7 +613,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
@@ -650,9 +647,9 @@ const Team = () => {
 <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
   Photos and Videography 
 </h1>
-<h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
+{/* <h1 className="font-Megrim text-center text-white text-[35px] sm:text-[30px] lg:text-[50px]  tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[10px] flex-col justify-center shrink-0 mt-0 mb-20">
   HEAD
-</h1>
+</h1> */}
 
 
   {/* Grid layout for team members */}
@@ -665,7 +662,7 @@ const Team = () => {
           className="relative flex flex-col items-center justify-center group transition-all duration-500 ease-in-out"
         >
           {/* Image container with circle transition */}
-          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
+          <div className={`relative flex items-center transition-all duration-500 ease-in-out -translate-x-[6rem] sm:translate-x-[0] sm:group-hover:-translate-x-[4rem] lg:group-hover:-translate-x-[8rem]`}>
             <div className="z-10">
               {/* Image with hover effect */}
               <img
