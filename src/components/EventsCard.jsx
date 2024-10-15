@@ -26,7 +26,7 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
                 y: -imgElement.offsetHeight / 5,
                 duration: 0.5,
             })
-            .to(textElement, { y: -40, opacity: 1, duration: 0.5 }, 0)
+            .to(textElement, { y: -130, opacity: 1, duration: 0.5 }, 0)
             .to(outerDivElement, {
                 borderColor: 'transparent',
                 borderWidth: '3px',
@@ -34,7 +34,7 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
                 boxShadow: neonGlowStyle.boxShadow,
                 backdropFilter: neonGlowStyle.backdropFilter
             }, 0)
-            .to(textDescElement, { y: -40, opacity: 1, duration: 0.5 }, 0);
+            .to(textDescElement, { y: -120, opacity: 1, duration: 0.5 }, 0);
         };
 
         const removeHoverEffects = () => {
@@ -111,8 +111,11 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
     };
 
     return (
-        <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px] h-[25rem]'>
-            <div onClick={handleClick} ref={outerDivRef} className='relative p-2 rounded-xl'>
+
+
+        <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px]'>
+            <div onClick={handleClick} ref={outerDivRef} className='relative p-2  rounded-xl  h-[75%]'>
+
                 <img
                     ref={imgRef}
                     src={imgURL}
@@ -121,7 +124,9 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
                 />
                 <div
                     ref={textRef}
-                    className='text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px] pb-4 mt-[-4rem]'
+
+                    className='text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px] pb-4 '
+
                 >
                     {eventName}
                 </div>
