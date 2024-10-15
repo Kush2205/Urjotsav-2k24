@@ -57,7 +57,7 @@ export default function Header() {
                         <div className='relative group hover:scale-[1.2] transition-all'>
                             Team
                             <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
-                        </div>
+                        </div> 
                         </Link>
                     </div>
                 </div>
