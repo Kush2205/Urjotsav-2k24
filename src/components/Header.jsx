@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Earth from "../assets/Images/NavbarEarth.png";
-import background from "../assets/Images/newbg.jpg";
+import Earth from "../assets/Urja_logo.png";
+import rglogo from "../assets/RGIPT.png";
+import snt from "../assets/st.png";
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header() {
@@ -15,7 +16,8 @@ export default function Header() {
         <>
             <div className='relative z-[1000]'>
                 <div className='hidden lg:flex justify-between w-full fixed top-0 left-0 z-[1000] bg-transparent'>
-                    <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+                    {/* Desktop navigation */}
+                    <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16 bg-zinc-500 ' >
                         <Link to='/'>
                             <div className='relative group hover:scale-[1.2] transition-all'>
                                 Home
@@ -36,11 +38,11 @@ export default function Header() {
                         </Link>
                     </div>
 
-                    <div className=' items-center p-4 lg:block hidden'>
-                        <img src={Earth} alt='earth' className='animate-slowspin w-[8rem]' />
+                    <div className='items-center lg:block hidden'>
+                        <img src={Earth} alt='earth' className='w-[15rem]' />
                     </div>
 
-                    <div className='hidden lg:flex rounded-l-full h-16 px-5 items-center text-white w-full justify-evenly gap-20' style={{ backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+                    <div className='flex rounded-l-full px-5 items-center text-white justify-evenly w-full h-16 bg-zinc-500 ' >
                         <Link to='Events'>
                             <div className='relative group hover:scale-[1.2] transition-all'>
                                 Events
@@ -54,21 +56,30 @@ export default function Header() {
                             </div>
                         </Link>
                         <Link to="team">
-                        <div className='relative group hover:scale-[1.2] transition-all'>
-                            Team
-                            <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
-                        </div> 
+
+                            <div className='relative group hover:scale-[1.2] transition-all'>
+                                Team
+                                <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
+                            </div>
+
                         </Link>
                     </div>
                 </div>
 
-                <div className='lg:hidden fixed top-0 left-0 p-4 z-[1000]'>
+                {/* Mobile navigation */}
+                <div className='lg:hidden fixed top-0 left-0 w-full h-[4.5rem] p-4 z-[1000] bg-gray-800 bg-opacity-70 flex justify-between items-center'>
                     <button onClick={toggleMobileMenu} className='text-white'>
                         {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                     </button>
+
+                    {/* Add logos here, aligned to the right */}
+                    <div className='flex items-center space-x-4'>
+                        <img src={rglogo} alt="RGIPT Logo" className='w-[50px] h-auto' />
+                        <img src={snt} alt="SNT Logo" className='w-[60px] h-auto' />
+                    </div>
                 </div>
 
-                <div className={`lg:hidden fixed top-0 left-0 w-full h-auto bg-black text-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+                <div className={`lg:hidden fixed top-0 left-0  w-full h-auto bg-black text-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
                     <div className='flex flex-col items-center py-4'>
                         <button onClick={toggleMobileMenu} className='self-end p-4'>
                             <FaTimes size={24} />

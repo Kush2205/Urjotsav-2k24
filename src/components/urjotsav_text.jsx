@@ -1,6 +1,9 @@
 import React from "react";
 import { FlipWords } from "../UI/flipwords";
 import logo from "../assets/Urja_logo.png";
+import rglogo from "../assets/RGIPT.png"
+import snt from "../assets/st.png"
+
 
 export default function FlipWordsDemo() {
   const words = ["Annual Techfest of RGIPT","Beyond the Cosmos, Beyond the Code"];
@@ -13,7 +16,7 @@ export default function FlipWordsDemo() {
 
   return (
     <div className="relative font-normal text-neutral-600 dark:text-neutral-400 flex flex-col items-center md:items-start md:mt-[20vh] mt-[18vh] px-4 md:px-8 lg:px-16 sm:mt-[18vh]">
-      <div className="text-white font-Space text-2xl md:text-6xl lg:text-4xl leading-tight mb-0 text-center md:text-left">
+      <div className="text-white font-Space text-2xl md:text-6xl lg:text-4xl leading-tight mb-0 text-center md:text-left ml-[-7.5rem] sm:ml-0 ">
         WELCOME TO
       </div>
       <div className="text-white font-Space text-5xl md:text-6xl lg:text-8xl leading-tight text-center md:text-left">
@@ -43,9 +46,19 @@ export default function FlipWordsDemo() {
       </a>
 
 
-      {/* <div className="absolute right-0 top-0 mt-4 mr-4">
-        <img src={logo} alt="Right Side" className="w-[500px] h-auto" />
-      </div> */}
+      <div className="absolute right-0 top-0 mt-4 mr-4 hidden lg:flex">
+  <img
+    src={rglogo}
+    alt="RGIPT Logo"
+    className="w-[130px] h-auto"
+  />
+  <img
+    src={snt}
+    alt="SNT Logo"
+    className="w-[150px] h-auto"
+  />
+</div>
+
     </div>
   );
 }
