@@ -80,10 +80,10 @@ export default function Header() {
                 </div>
 
                 <div className={`lg:hidden fixed top-0 left-0  w-full h-auto bg-black text-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
-                    <div className='flex flex-col items-center py-4'>
-                        <button onClick={toggleMobileMenu} className='self-end p-4'>
+                    <div className='flex flex-col items-center py-4 pt-20'>
+                        {/* <button onClick={toggleMobileMenu} className='self-end p-4'>
                             <FaTimes size={24} />
-                        </button> 
+                        </button>  */}
                         <Link to='' className='py-2' onClick={toggleMobileMenu}>
                             Home
                         </Link>
