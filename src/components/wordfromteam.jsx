@@ -10,7 +10,7 @@ function WordFromTeam() {
         <div className='w-full md:w-[45vw] lg:w-[35vw] h-[30vh] md:h-[40vh] lg:h-[50vh]'>
           <iframe
             className='md:w-full md:h-full w-[75%] h-[200px] mx-[10%] border-none'
-            src="https://www.youtube.com/embed/Vo8huF43CB4"
+            src="https://www.youtube.com/embed/psYAHKTup_s?si=MeX6oB6WxQym_aFP"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

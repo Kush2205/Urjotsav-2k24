@@ -14,9 +14,10 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
         const textDescElement = textDescRef.current;
 
         const neonGlowStyle = {
-            boxShadow: '0 0 30px rgba(45,143,184, 0.8), 0 0 30px rgba(45,143,184, 0.6), 0 0 30px rgba(45,143,184, 0.4)',
+            boxShadow: '0 0 30px rgba(128,128,128, 0.8), 0 0 30px rgba(128,128,128, 0.6), 0 0 30px rgba(128,128,128, 0.4)',
             backdropFilter: 'blur(10px)'
         };
+        
 
         const applyHoverEffects = () => {
             const tl = gsap.timeline();
@@ -110,7 +111,7 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
     };
 
     return (
-        <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px]'>
+        <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px] h-[25rem]'>
             <div onClick={handleClick} ref={outerDivRef} className='relative p-2 rounded-xl'>
                 <img
                     ref={imgRef}
@@ -120,7 +121,7 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
                 />
                 <div
                     ref={textRef}
-                    className='text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px] pb-4'
+                    className='text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[27px] pb-4 mt-[-4rem]'
                 >
                     {eventName}
                 </div>
