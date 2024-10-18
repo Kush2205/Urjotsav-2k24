@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
 const Cyl = () => {
-    const tex = useTexture('./sponsors.png');
+    const tex = useTexture('./sponsors.jpg');
     const cyl = useRef(null);
     const rotationSpeed = 0.0035;
 
@@ -13,10 +13,10 @@ const Cyl = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 768) {npm
                 // Smaller radius and height for mobile screens
-                setRadius(3.7);
-                setHeight(1.2);
+                setRadius(3.9);
+                setHeight(1.6);
             } else if (window.innerWidth <= 1024) {
                 // Medium radius and height for tablet screens
                 setRadius(3);

@@ -1,11 +1,11 @@
 import React from 'react';
 import bgv from '../assets/bgvid.mp4';
-import Sponsors from './sponsors';
 import Team from '../components/wordfromteam';
 import AboutU from '../components/About_urjotsav';
 import Text from '../components/urjotsav_text';
 import Speakers from '../components/Speakers';
 import Theme from '../components/theme';
+import Sponsors1 from './Sponsers1';
 
 export default function Home(props) {
     return (
@@ -38,7 +38,7 @@ export default function Home(props) {
 
             </div>
             <div>
-                <Sponsors />
+                <Sponsors1 />
             </div>
            
         </>

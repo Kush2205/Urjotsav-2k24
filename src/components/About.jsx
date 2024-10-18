@@ -10,32 +10,9 @@ const GlassCard = () => {
       <div className='fixed inset-0 z-[-1]'>
         <BackgroundBeams />
       </div>
-
-      <p className='text-center font-Space text-white underline mt-[15vh] text-5xl'>About RGIPT</p>
-
-      <div className="flex justify-center items-center">
-        <div className="glass-card w-[90vw] md:w-[70vw] min-h-[50vh] p-6 rounded-3xl backdrop-blur-md bg-white/10 border border-white/20 shadow-lg flex flex-col items-center mt-6">
-          {/* Image Section */}
-          <div className="w-[90%] h-auto flex justify-center items-center mb-4">
-            <img
-              src={rgipt}
-              alt="College Campus"
-              className="w-full h-full object-cover rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          {/* Text Section */}
-          <div className="w-[95%] text-white text-center">
-            <p className="text-lg font-Rajdhani mt-4">
-              Rajiv Gandhi Institute of Petroleum Technology (RGIPT) is an Institute of National Importance established under the Rajiv Gandhi Institute of Petroleum Technology Act passed by Parliament in December 2007. RGIPT is an initiative of MoPNG (Ministry of Petroleum & Natural Gas) to cater to the technical & managerial talent needs of the petroleum and energy sector. RGIPT is co-promoted as an energy domain special institute by six leading oil public sector units (ONGC, OIL, GAIL, BPCL, HPCL, IOCL) in association with the oil industry development board (OIDB). It is a leading and prominent engineering institute of the government of India, located at Jais, Amethi. The institute is associated with leading International Universities/Institutions specializing in the domain of Petroleum and Chemical Technology.
-            </p>
-            <p className="text-lg font-Rajdhani mt-4">
-              The prime objective of the institute is to provide world class education training and Research to roll out efficient human resource to meet the growing requirement of the petroleum and energy sector the aspiration is to develop India as a global manpower hub for the entire petroleum and energy sector. Armed with excellence faculty members the institute hardness emerging ideas that culminate in tomorrow's technology that have a flair for evolving technologies.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <p className='text-center font-Space text-white underline mt-[10vh] text-5xl'>About Urjotsav</p>
+    <div className='w-full flex justify-center'>
+      <p className='text-center font-Space text-white w-[90%] underline mt-[14vh] text-3xl sm:text-5xl '>About Urjotsav</p>
+    </div>
 
       <div className="flex justify-center items-center mt-5 mb-12">
         <div className="glass-card w-[90vw] md:w-[70vw] min-h-[50vh] p-6 rounded-3xl backdrop-blur-md bg-white/10 border border-white/20 shadow-lg flex flex-col md:flex-row items-center">
@@ -62,6 +39,33 @@ const GlassCard = () => {
 
         </div>
       </div>
+
+
+      <p className='text-center font-Space text-white underline mt-[15vh] text-4xl sm:text-5xl'>About RGIPT</p>
+
+      <div className="flex justify-center items-center mb-32">
+        <div className="glass-card w-[90vw] md:w-[70vw] min-h-[50vh] p-6 rounded-3xl backdrop-blur-md bg-white/10 border border-white/20 shadow-lg flex flex-col items-center mt-6">
+          {/* Image Section */}
+          <div className="w-[90%] h-auto flex justify-center items-center mb-4">
+            <img
+              src={rgipt}
+              alt="College Campus"
+              className="w-full h-full object-cover rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+          {/* Text Section */}
+          <div className="w-[95%] text-white text-center">
+            <p className="text-lg font-Rajdhani mt-4">
+              Rajiv Gandhi Institute of Petroleum Technology (RGIPT) is an Institute of National Importance established under the Rajiv Gandhi Institute of Petroleum Technology Act passed by Parliament in December 2007. RGIPT is an initiative of MoPNG (Ministry of Petroleum & Natural Gas) to cater to the technical & managerial talent needs of the petroleum and energy sector. RGIPT is co-promoted as an energy domain special institute by six leading oil public sector units (ONGC, OIL, GAIL, BPCL, HPCL, IOCL) in association with the oil industry development board (OIDB). It is a leading and prominent engineering institute of the government of India, located at Jais, Amethi. The institute is associated with leading International Universities/Institutions specializing in the domain of Petroleum and Chemical Technology.
+            </p>
+            <p className="text-lg font-Rajdhani mt-4">
+              The prime objective of the institute is to provide world class education training and Research to roll out efficient human resource to meet the growing requirement of the petroleum and energy sector the aspiration is to develop India as a global manpower hub for the entire petroleum and energy sector. Armed with excellence faculty members the institute hardness emerging ideas that culminate in tomorrow's technology that have a flair for evolving technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
     </>
   );
 };
