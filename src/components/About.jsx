@@ -1,3 +1,4 @@
+
 import React from 'react';
 import rgipt from '../assets/Images/rgiptp.jpg';
 import { BackgroundBeams } from "./ui/BackgroundBeamComponent/bgforabt";
@@ -58,6 +59,7 @@ const GlassCard = () => {
               The fest is scheduled to be meticulously organized from the 9th to the 10th of November 2024. It embodies exemplary preparation that undoubtedly equips each participant with the tools needed to effectively shape their career aspirations. Crafted with a keen understanding of the contemporary technical demands of the industry, Urjotsav is poised to make an enduring impact on its esteemed attendees.
             </p>
           </div>
+
         </div>
       </div>
     </>
