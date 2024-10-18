@@ -6,7 +6,7 @@ import snt from "../assets/st.png"
 
 
 export default function FlipWordsDemo() {
-  const words = ["Annual Techfest of RGIPT","Beyond the Cosmos, Beyond the Code"];
+  const words = ["Annual Techfest of RGIPT", "Beyond the Cosmos, Beyond the Code"];
 
   // Calculate the days left before 9th November 2024
   const today = new Date();
@@ -25,17 +25,17 @@ export default function FlipWordsDemo() {
       <div className="h-[100px] md:h-[120px] lg:h-[150px] max-w-full md:max-w-[80%] lg:max-w-[70%] text-xl md:text-4xl lg:text-5xl pt-0 font-Space flex items-center justify-center md:justify-start text-white">
         <FlipWords words={words} />
       </div>
-      
+
 
       <div className="">
-  <h3 className="text-white font-Megrim text-2xl md:text-4xl lg:text-6xl xs:text-xl px-4 md:-ml-4 py-2 bg-[#00000058] rounded-xl">
-    9-10 NOV
-  </h3>
-  <div className="text-white text-xl md:text-2xl lg:text-4xl mt-1 text-center md:text-left">
-    {daysLeft} Days Left
-  </div>
-</div>
-      
+        <h3 className="text-white font-Megrim text-2xl md:text-4xl lg:text-6xl xs:text-xl px-4 md:-ml-4 py-2 bg-[#00000058] rounded-xl">
+          9-10 NOV
+        </h3>
+        <div className="text-white text-xl md:text-2xl lg:text-4xl mt-1 text-center md:text-left">
+          {daysLeft} Days Left
+        </div>
+      </div>
+
       <div className="w-full mt-8 md:mt-10 lg:mt-2">
         <h3 className="text-white font-Rajdhani text-lg md:text-xl lg:text-2xl py-2 text-center md:text-left md:w-auto w-full">
           Embark on a cosmic journey and unlock the secrets of the universe
@@ -46,18 +46,23 @@ export default function FlipWordsDemo() {
       </a>
 
 
-      <div className="absolute right-0 top-0 mt-4 mr-4 hidden lg:flex">
-  <img
-    src={rglogo}
-    alt="RGIPT Logo"
-    className="w-[130px] h-auto"
-  />
-  <img
-    src={snt}
-    alt="SNT Logo"
-    className="w-[150px] h-auto"
-  />
-</div>
+      <div className="absolute right-0 top-0 mt-4 mr-4 hidden lg:flex lg:space-x-20">
+        <a href="https://www.rgipt.ac.in/" target="_blank" rel="noopener noreferrer">
+          <img
+            src={rglogo}
+            alt="RGIPT Logo"
+            className="w-[130px] h-auto"
+          />
+        </a>
+        <a href="https://www.rgipt.ac.in/en/post/science-tec-committee" target="_blank" rel="noopener noreferrer">
+          <img
+            src={snt}
+            alt="SNT Logo"
+            className="w-[150px] h-auto"
+          />
+        </a>
+      </div>
+
 
     </div>
   );

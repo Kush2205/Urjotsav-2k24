@@ -17,7 +17,7 @@ export default function Header() {
             <div className='relative z-[1000] font-Space'>
                 <div className='hidden lg:flex justify-between w-full fixed top-0 left-0 z-[1000] bg-transparent'>
                     {/* Desktop navigation */}
-                    <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16 bg-zinc-500 ' >
+                    <div className='flex rounded-r-full px-5 items-center text-white justify-evenly w-full h-16 bg-white bg-opacity-10 backdrop-blur-3xl'>
                         <Link to='/'>
                             <div className='relative group hover:scale-[1.2] transition-all'>
                                 Home
@@ -42,7 +42,7 @@ export default function Header() {
                         <img src={Earth} alt='earth' className='w-[15rem]' />
                     </div>
 
-                    <div className='flex rounded-l-full px-5 items-center text-white justify-evenly w-full h-16 bg-zinc-500 ' >
+                    <div className='flex rounded-l-full px-5 items-center text-white justify-evenly w-full h-16 bg-white bg-opacity-10 backdrop-blur-3xl'>
                         <Link to='Events'>
                             <div className='relative group hover:scale-[1.2] transition-all'>
                                 Events
@@ -67,23 +67,28 @@ export default function Header() {
                 </div>
 
                 {/* Mobile navigation */}
-                <div className='lg:hidden fixed top-0 left-0 w-full h-[4.5rem] p-4 z-[1000] bg-gray-800 bg-opacity-70 flex justify-between items-center'>
+                <div className='lg:hidden fixed top-0 left-0 w-full h-[4rem] p-4 z-[10] bg-black bg-opacity-30 backdrop-blur-sm flex justify-between items-center'>
                     <button onClick={toggleMobileMenu} className='text-white'>
-                        {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                    <FaBars size={24}/>
+                          
                     </button>
 
-                    {/* Add logos here, aligned to the right */}
-                    <div className='flex items-center space-x-4'>
-                        <img src={rglogo} alt="RGIPT Logo" className='w-[50px] h-auto' />
-                        <img src={snt} alt="SNT Logo" className='w-[60px] h-auto' />
+                    <div className='flex items-center space-x-4 '>
+                        <a href="https://www.rgipt.ac.in/" target="_blank" rel="noopener noreferrer">
+                            <img src={Earth} alt="RGIPT Logo" className='w-[55px] h-auto' />
+                        </a>
+                        {/* <a href="https://www.rgipt.ac.in/en/post/science-tec-committee" target="_blank" rel="noopener noreferrer">
+                            <img src={snt} alt="SNT Logo" className='w-[60px] h-auto' />
+                        </a> */}
                     </div>
+
                 </div>
 
-                <div className={`lg:hidden fixed top-0 left-0  w-full h-auto bg-black text-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
-                    <div className='flex flex-col items-center py-4 pt-20'>
-                        {/* <button onClick={toggleMobileMenu} className='self-end p-4'>
-                            <FaTimes size={24} />
-                        </button>  */}
+                <div className={`lg:hidden fixed top-0 left-0 z-20 w-full h-auto bg-black text-white transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+                    <div className='flex flex-col items-center py-4 '>
+                        <button onClick={toggleMobileMenu} className='self-start p-4'>
+                        <FaTimes size={24} />
+                        </button>  
                         <Link to='' className='py-2' onClick={toggleMobileMenu}>
                             Home
                         </Link>
