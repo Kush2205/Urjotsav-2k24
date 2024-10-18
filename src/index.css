@@ -13,3 +13,9 @@
 @tailwind components;
 @tailwind utilities;
     
+
+#moon-container {
+    margin-bottom:20%;
+    position: relative; /* Keep it relative for proper flow */
+    top: auto; /* Reset any top positioning */
+}
