@@ -67,19 +67,17 @@ export default function Header() {
                 </div>
 
                 {/* Mobile navigation */}
-                <div className='lg:hidden fixed top-0 left-0 w-full h-[4rem] p-4 z-[10] bg-black bg-opacity-30 backdrop-blur-sm flex justify-between items-center'>
+                <div className='lg:hidden fixed top-0 left-0 w-full h-[4.5rem] p-4 z-[10] flex justify-between items-center'>
                     <button onClick={toggleMobileMenu} className='text-white'>
                     <FaBars size={24}/>
                           
                     </button>
 
-                    <div className='flex items-center space-x-4 '>
-                        <a href="https://www.rgipt.ac.in/" target="_blank" rel="noopener noreferrer">
-                            <img src={Earth} alt="RGIPT Logo" className='w-[55px] h-auto' />
-                        </a>
-                        {/* <a href="https://www.rgipt.ac.in/en/post/science-tec-committee" target="_blank" rel="noopener noreferrer">
-                            <img src={snt} alt="SNT Logo" className='w-[60px] h-auto' />
-                        </a> */}
+                    <div >
+                       
+                            <img src={Earth} alt="RGIPT Logo" className='w-[60px] h-auto' />
+                     
+                        
                     </div>
 
                 </div>
