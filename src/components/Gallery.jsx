@@ -40,7 +40,7 @@ function Gallery() {
         <div className="flex justify-center w-full h-full">
             <div className="w-[90vw] h-full">
                 <div>
-                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-semibold font-['megrim'] text-white text-center mb-8 md:mb-12 p-5">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl mt-[100px] font-semibold font-['megrim'] text-white text-center mb-8 md:mb-12 p-5">
                         Gallery
                     </h1>
                 </div>
