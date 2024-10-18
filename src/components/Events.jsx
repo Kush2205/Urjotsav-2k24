@@ -39,24 +39,38 @@ export default function Events(props) {
             imgURL="https://teambuilding.com/wp-content/uploads/2022/06/team-building-events-and-activities-.jpg"
           />
         </div> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-x-20  justify-items-center">
-        <ThreeDCardDemo  eventName="Coding Events"
-            serialNum="1"
-            eventNumber="5"
-            imgURL="https://image.benq.com/is/image/benqco/rd-m?$ResponsivePreset$"/>
-       <ThreeDCardDemo   eventName="Robotics Events"
-            serialNum="2"
-            imgURL="https://analyticsindiamag.com/wp-content/uploads/2019/05/first-nevada-robotics-robots_MEDIUM.jpg"/>
-       <ThreeDCardDemo  eventName="Entrepreneurial Events"
-            serialNum="3"
-            imgURL="https://www.wtcmanila.com.ph/wp-content/uploads/2020/06/Business-Events-For-Post-COVID-Economic-Recovery.jpg"/>
-       <ThreeDCardDemo  eventName="Quiz and Debate Events"
-            serialNum="4"
-            imgURL="https://img.freepik.com/free-vector/intelligent-young-people-playing-television-quiz-with-host_74855-7560.jpg"/>
-       <ThreeDCardDemo  eventName="Fun & General Events"
-            serialNum="5"
-            imgURL="https://teambuilding.com/wp-content/uploads/2022/06/team-building-events-and-activities-.jpg"/>
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-x-10 justify-items-center">
+  <ThreeDCardDemo  
+    eventName="Coding Events"
+    serialNum="1"
+    eventNumber="5"
+    imgURL="https://image.benq.com/is/image/benqco/rd-m?$ResponsivePreset$"
+  />
+  <ThreeDCardDemo
+    eventName="Robotics Events"
+    serialNum="2"
+    imgURL="https://analyticsindiamag.com/wp-content/uploads/2019/05/first-nevada-robotics-robots_MEDIUM.jpg"
+  />
+  <ThreeDCardDemo
+    eventName="Entrepreneurial Events"
+    serialNum="3"
+    imgURL="https://www.wtcmanila.com.ph/wp-content/uploads/2020/06/Business-Events-For-Post-COVID-Economic-Recovery.jpg"
+  />
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 col-span-full justify-center">
+    <ThreeDCardDemo
+      eventName="Quiz and Debate Events"
+      serialNum="4"
+      imgURL="https://img.freepik.com/free-vector/intelligent-young-people-playing-television-quiz-with-host_74855-7560.jpg"
+    />
+    <ThreeDCardDemo
+      eventName="Fun & General Events"
+      serialNum="5"
+      imgURL="https://teambuilding.com/wp-content/uploads/2022/06/team-building-events-and-activities-.jpg"
+    />
+  </div>
+</div>
+
      
       </div>
     </>
