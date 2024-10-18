@@ -5,7 +5,7 @@ import image1 from "../assets/events/innvoation2.jpg";
 import image2 from "../assets/events/capital quest.webp";
 import image3 from "../assets/events/stock market.jpg";
 import border from "../assets/Images/Group 22.svg";
-import bg from "../assets/Images/image.png";
+import bg from "../assets/Images/image3.png";
 import images from "../jsons/images";
 
 export default function EventCategory({

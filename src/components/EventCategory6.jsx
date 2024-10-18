@@ -5,7 +5,7 @@ import image3 from "../assets/events/codingevent.png";
 import image2 from "../assets/events/competitivecoding.jpg";
 import image1 from '../assets/events/codedecipher.jpg';
 import border from "../assets/Images/Group 22.svg";
-import bg from "../assets/Images/image.png";
+import bg from "../assets/Images/image3.png";
 import images from "../jsons/images";
 
 export default function EventCategory({

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,Desc }) {
+export default function EventsCard({ serialNum,  eventName, imgURL,Desc }) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
