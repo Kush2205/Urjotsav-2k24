@@ -1,12 +1,11 @@
 import React from 'react';
 import bgv from '../assets/bgvid.mp4';
-import Sponsors from './Sponsors';
+import Sponsors from './sponsors';
 import Team from '../components/wordfromteam';
 import AboutU from '../components/About_urjotsav';
 import Text from '../components/urjotsav_text';
 import Speakers from '../components/Speakers';
 import Theme from '../components/theme';
-
 
 export default function Home(props) {
     return (
@@ -33,17 +32,15 @@ export default function Home(props) {
             <AboutU/>
             <Team />
             <Theme/>
-           
-
-            {/* <div className='md:h-[110vh] md:pt-0 pt-[200px] h-auto z-20 w-full'> */}
-                {/* <Sponsors />
-            </div> */}
-
             <div>
 
                 <Speakers />
-            </div>
 
+            </div>
+            <div>
+                <Sponsors />
+            </div>
+           
         </>
     );
 }
