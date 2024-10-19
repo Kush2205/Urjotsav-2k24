@@ -4,7 +4,7 @@ function Footer() {
   return (
 <div className="w-[100vw] flex items-center justify-center inset-0 bg-white bg-opacity-10 backdrop-blur-md">
         <div className="md:w-[90%] w-full px-4 text-white flex flex-col">
-            <div className="w-full text-7xl font-bold pt-10">
+            <div className="w-full text-5xl sm:text-7xl font-bold pt-10">
                 <h1 className="w-full md:w-[90%] pt-10">
                 <span className='capitalize text-slate-300 font-Megrim'>URJOTSAV</span></h1>
             </div>
