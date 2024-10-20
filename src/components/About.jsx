@@ -38,7 +38,7 @@ const GlassCard = () => {
 
       <div className="flex justify-center items-center mt-5 mb-12">
         <div className="glass-card w-[90vw] md:w-[70vw] min-h-[50vh] p-6 rounded-3xl backdrop-blur-md bg-white/10 border border-white/20 shadow-lg flex flex-col md:flex-row items-center">
-          {/* Image Section (will be on top in small screens) */}
+          {/* Image Section */}
           <div className="flex-1 flex justify-center items-center mb-4 md:mb-0">
             <img
               src={urjotsav}
