@@ -36,7 +36,8 @@ function Speakers() {
                         imgURL={ankush}
                     />
                 </div>
-                <div className="flex justify-center">
+                <div className='lg:flex lg:flex-row md:ml-[20%] lg:ml-[70%] lg:gap-[100%]'>
+                    <div className="flex justify-center">
                     <EventsCard 
                         eventName={`Dr V Narayananan`} 
                         Desc={`Director of the Liquid Propulsion Systems Centre (LPSC) of ISRO`}
@@ -49,7 +50,8 @@ function Speakers() {
                         Desc={`Nasscom Business`}
                         imgURL={pankaj}
                     />
-                </div>
+                </div></div>
+                
             </div>
         </>
     );

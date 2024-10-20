@@ -7,7 +7,7 @@ import image3 from "../assets/events/robosoccer2.jpg";
 import image4 from "../assets/events/linefolow.jpeg";
 import image5 from "../assets/events/line maze2.jpg";
 import border from "../assets/Images/Group 22.svg";
-import bg from "../assets/Images/image.png";
+import bg from "../assets/Images/image3.png";
 import images from "../jsons/images";
 
 export default function EventCategory({

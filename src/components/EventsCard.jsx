@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,Desc }) {
+export default function EventsCard({ serialNum,  eventName, imgURL,Desc }) {
     const imgRef = useRef(null);
     const textRef = useRef(null);
     const outerDivRef = useRef(null);
@@ -114,7 +114,7 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
 
 
         <div className='flex justify-center w-[85%] sm:w-[430px] md:w-[90%] lg:w-[340px]'>
-            <div onClick={handleClick} ref={outerDivRef} className='relative p-2  rounded-xl  h-[75%]'>
+            <div onClick={handleClick} ref={outerDivRef} className='relative p-2  rounded-xl h-[75%] '>
 
                 <img
                     ref={imgRef}
@@ -132,7 +132,7 @@ export default function EventsCard({ serialNum, eventNumber, eventName, imgURL,D
                 </div>
                 <div
                     ref={textDescRef}
-                    className='text-center w-full text-white opacity-0 text-[20px] sm:text-[23px] md:text-[15px] pb-8'
+                    className='text-center w-full text-white opacity-0 text-[17px] sm:text-[23px] md:text-[15px] pb-8'
                 >
                     {Desc}
                 </div>
