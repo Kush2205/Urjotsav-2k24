@@ -73,28 +73,28 @@ export default function Header() {
                 <div className='hidden lg:flex justify-between w-full fixed bottom-0 left-0 right-0 z-[1000] bg-transparent'>
                     {/* bottom navigation */}
                     <div className='flex rounded-tr-full px-5 items-center text-white justify-evenly w-full h-16 bg-white bg-opacity-10 backdrop-blur-3xl'>
-                        
-                            <div className='relative group hover:scale-[1.2] transition-all'>
-                                <a href="#sponsors">Sponsors</a>
-                                
-                                <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
-                            </div>
-                       
 
                         <div className='relative group hover:scale-[1.2] transition-all'>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiLb_xBZYVC7N4XNFOPCUj8wcz_NCYujyHkTsr1qRYpNJaQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
-                                Fest passes</a>
-                                
-                                <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
-                            </div>
+                            <a href="#sponsors">Sponsors</a>
 
-                            <div className='relative group hover:scale-[1.2] transition-all'>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScCjuBvZowgqhql8poRIZlHqwqHE2pYLIC5ln6sZ9LfedH8Vg/viewform" target="_blank" rel="noopener noreferrer">Campus Ambassador
-                                </a>
-                                
-                                <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
-                            </div>
-                      
+                            <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
+                        </div>
+
+
+                        <div className='relative group hover:scale-[1.2] transition-all'>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiLb_xBZYVC7N4XNFOPCUj8wcz_NCYujyHkTsr1qRYpNJaQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+                                Fest passes</a>
+
+                            <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
+                        </div>
+
+                        <div className='relative group hover:scale-[1.2] transition-all'>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScCjuBvZowgqhql8poRIZlHqwqHE2pYLIC5ln6sZ9LfedH8Vg/viewform" target="_blank" rel="noopener noreferrer">Campus Ambassador
+                            </a>
+
+                            <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
+                        </div>
+
 
                     </div>
 
@@ -157,9 +157,14 @@ export default function Header() {
                         <Link to="team" className='py-2' onClick={toggleMobileMenu}>
                             Team
                         </Link>
-                        <Link to="#sponsors" className='py-2' onClick={toggleMobileMenu}>
+                        <a href="#sponsors" className='py-2' onClick={toggleMobileMenu}>
                             Sponsors
-                        </Link>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiLb_xBZYVC7N4XNFOPCUj8wcz_NCYujyHkTsr1qRYpNJaQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" className='py-2' onClick={toggleMobileMenu}>
+                            Fest passes</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScCjuBvZowgqhql8poRIZlHqwqHE2pYLIC5ln6sZ9LfedH8Vg/viewform" target="_blank" rel="noopener noreferrer" className='py-2' onClick={toggleMobileMenu}>Campus Ambassador
+                        </a>
+
                     </div>
                 </div>
                 {/* Social Media Icons at Bottom */}

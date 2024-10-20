@@ -22,7 +22,7 @@ export default function Sponsors1(props) {
     return (
         <>
         <div className='flex flex-col '>
-            <h3 className="font-Space text-center font-semibold text-4xl md:mb-[-6%] lg:mb-[3] md:text-6xl lg:text-8xl text-white">
+            <h3 className="font-Space text-center font-semibold p-4 text-4xl md:mb-[-6%] lg:mb-[3] md:text-6xl lg:text-8xl text-white">
                      OUR SPONSORS
             </h3>
             <div
