@@ -20,7 +20,7 @@ export default function Home(props) {
                     style={{ playbackRate: 0.4 }}
                 ></video>
                 
-                <div className='absolute inset-0  items-start pl-[2%] z-20'>
+                <div id='home' className='absolute inset-0  items-start pl-[2%] z-20'>
                     {/* <h1 className='font-Megrim text-8xl mb-3 text-zinc-500  font-bold'>Urjotsav</h1>
                  */}
                     <Text />
@@ -37,7 +37,7 @@ export default function Home(props) {
                 <Speakers />
 
             </div>
-            <div>
+            <div id='sponsors'>
                 <Sponsors1 />
             </div>
            
