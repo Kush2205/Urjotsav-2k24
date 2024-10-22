@@ -19,3 +19,8 @@
     position: relative; /* Keep it relative for proper flow */
     top: auto; /* Reset any top positioning */
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
