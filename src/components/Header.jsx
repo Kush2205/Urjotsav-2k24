@@ -74,11 +74,11 @@ export default function Header() {
                     {/* bottom navigation */}
                     <div className='flex rounded-tr-full px-5 items-center text-white justify-evenly w-full h-16 bg-white bg-opacity-10 backdrop-blur-3xl'>
 
-                        <div className='relative group hover:scale-[1.2] transition-all'>
+                        {/* <div className='relative group hover:scale-[1.2] transition-all'>
                             <a href="#sponsors">Sponsors</a>
 
                             <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
-                        </div>
+                        </div> */}
 
 
                         <div className='relative group hover:scale-[1.2] transition-all'>
@@ -119,7 +119,7 @@ export default function Header() {
 
 
                 {/* Mobile navigation */}
-                <div className='lg:hidden fixed top-0 left-0 w-full h-[4.5rem] p-4 z-[10] flex justify-between items-center'>
+                <div className='lg:hidden fixed top-0 left-0 w-full h-[55px] p-4 z-[10] flex justify-between items-center bg-black bg-opacity-40'>
                     <button onClick={toggleMobileMenu} className='text-white'>
                         <FaBars size={24} />
 
@@ -157,9 +157,9 @@ export default function Header() {
                         <Link to="team" className='py-2' onClick={toggleMobileMenu}>
                             Team
                         </Link>
-                        <a href="#sponsors" className='py-2' onClick={toggleMobileMenu}>
+                        {/* <a href="#sponsors" className='py-2' onClick={toggleMobileMenu}>
                             Sponsors
-                        </a>
+                        </a> */}
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiLb_xBZYVC7N4XNFOPCUj8wcz_NCYujyHkTsr1qRYpNJaQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" className='py-2' onClick={toggleMobileMenu}>
                             Fest passes</a>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScCjuBvZowgqhql8poRIZlHqwqHE2pYLIC5ln6sZ9LfedH8Vg/viewform" target="_blank" rel="noopener noreferrer" className='py-2' onClick={toggleMobileMenu}>Campus Ambassador

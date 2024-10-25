@@ -112,14 +112,14 @@ const teamMembers = [
     mail: "22cs2031@rgipt.ac.in",
     imgSrc: "heads/Sponsorship/shubh.jpg",
   },
-  {
-    id: 27,
-    name: "Vijit Singh",
-    role: "Sponsorship Team",
-    position: "Head",
-    mail: "22ec3064@rgipt.ac.in",
-    imgSrc: "heads/Sponsorship/vijit.jpeg",
-  },
+  // {
+  //   id: 27,
+  //   name: "Vijit Singh",
+  //   role: "Sponsorship Team",
+  //   position: "Head",
+  //   mail: "22ec3064@rgipt.ac.in",
+  //   imgSrc: "heads/Sponsorship/vijit.jpeg",
+  // },
   {
     id: 27,
     name: "Nishant Nischal",
@@ -257,8 +257,8 @@ const teamMembers = [
 const Team = () => {
   return (
     <div className=" text-white z-[0] bg-black bg-opacity-60 min-h-screen flex flex-col justify-center items-center">
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Fest Coordinators
         </h1>
 
@@ -294,7 +294,7 @@ const Team = () => {
                       <h3 className="text-[1rem] sm:text-[1.5rem] pt-2 pb-2 font-semibold text-white whitespace-nowrap opacity-100 group-hover:opacity-100 transition-opacity duration-[2000ms] delay-[500ms] ml-[1rem] sm:ml-[2rem] transform sm:translate-x-0 group-hover:translate-x-0 group-hover:delay-[200ms] ease-in-out">
                         <div className="ml-[3rem]">{member.name}</div>
                         <div className="ml-[3rem] text-[1rem]">
-                          {member.position}
+                          Coordinator
                         </div>
                         <div className="ml-[3rem] text-[1rem]">
                           {member.mail}
@@ -315,8 +315,8 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Event Organizers
         </h1>
 
@@ -372,13 +372,13 @@ const Team = () => {
             ))}
         </div>
       </div>
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Sponsorship Team
         </h1>
 
         {/* Grid layout for team members */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 sm:gap-y-12 gap-8 sm:gap-6 justify-evenly mt-10 mb-12 transition-all duration-500 ease-in-out">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:gap-y-12 gap-8 sm:gap-6 justify-evenly mt-10 mb-12 transition-all duration-500 ease-in-out">
           {teamMembers
             .filter((member) => member.role === "Sponsorship Team")
             .map((member) => (
@@ -430,8 +430,8 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] mb-8 sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 sm:mb-0">
           Event Management and Logistics Team
         </h1>
 
@@ -488,8 +488,8 @@ const Team = () => {
         </div>
       </div>
       {/* member.role === "Technical Team" && member.position === "Head" */}
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Technical Team
         </h1>
 
@@ -548,8 +548,8 @@ const Team = () => {
             ))}
         </div>
       </div>
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Hospitality Team
         </h1>
 
@@ -609,8 +609,8 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Designing Team
         </h1>
 
@@ -667,8 +667,8 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Editorial Team
         </h1>
 
@@ -727,8 +727,8 @@ const Team = () => {
             ))}
         </div>
       </div>
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Creativity Team
         </h1>
 
@@ -785,8 +785,8 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Social Media Team
         </h1>
 
@@ -846,8 +846,8 @@ const Team = () => {
             ))}
         </div>
       </div>
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Outreach Team
         </h1>
 
@@ -903,8 +903,8 @@ const Team = () => {
             ))}
         </div>
       </div>
-      <div className="w-[90%] mx-auto mt-4 mb-8">
-        <h1 className="text-center text-white text-[42px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
+      <div className="w-[90%] mx-auto">
+        <h1 className="text-center text-white text-[30px] sm:text-[58px] lg:text-[78px] font-[Jost] font-semibold tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] break-words flex h-[140px] sm:h-[180px] lg:h-[220px] flex-col justify-center shrink-0 mt-8 mb-0">
           Photos and Videography
         </h1>
 
