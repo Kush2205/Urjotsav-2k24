@@ -18,7 +18,7 @@ function WordFromTeam() {
         </div>
         <div className='w-full md:w-[50vw]  h-auto md:h-[50vh] lg:h-[70vh] text-wrap text-center text-lg font-semibold  md:text-xl lg:text-2xl font-Rajdhani text-white flex items-center justify-center  px-4 md:px-0'>
        
-        Hello and thank you for visiting the official website of RGIPT's annual techfest, URJOTSAV, now in its [EDITION] year! The students here have been working tirelessly over the last several months to ensure that URJOTSAV 2024–25 is an experience you will never forget. With so many exciting things happening during this year's edition, it's sure to be one for the record books. Right here on this page is where your experience starts! Make sure you don't miss a second of the innovation and excitement that URJOTSAV'24 has to offer by exploring all the accessible possibilities        </div>
+        Hello and thank you for visiting the official website of RGIPT's annual techfest, URJOTSAV. The students here have been working tirelessly over the last several months to ensure that URJOTSAV 2024–25 is an experience you will never forget. With so many exciting things happening during this year's edition, it's sure to be one for the record books. Right here on this page is where your experience starts! Make sure you don't miss a second of the innovation and excitement that URJOTSAV'24 has to offer by exploring all the accessible possibilities        </div>
       </div>
     </>
   );
