@@ -12,15 +12,7 @@ function Footer() {
                 <p className="w-full md:w-2/3 text-white-400 font-[Josh] text-lg">RGIPT's Techfest
                 <br /> <br />
                 The festival is dedicated to providing a vibrant platform for aspiring industry leaders to showcase their exceptional talents while fostering collaboration and strategic planning. Participants will engage in various activities, workshops, and competitions that help them develop essential leadership skills and experience the value of teamwork. This initiative aims to inspire unity and connection among young minds, preparing them to make meaningful contributions to their fields and society.</p>
-                <a href="/register" className='w-full flex justify-end max-h-[75px] mt-6 md:mt-0'>
-  <button 
-    id='expand'  
-    className='uppercase relative z-80 font-Megrim font-bold rounded-full text-white text-lg md:text-2xl mt-1 p-3 mb-3 transition-all hover:bg-white hover:text-black' 
-    style={{ borderWidth: `2px` }}
-  >
-    Be a Campus ambassador
-  </button>
-</a>
+             
                 
             </div>
         
