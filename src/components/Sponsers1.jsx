@@ -1,22 +1,21 @@
 import React from 'react'
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-import royalenfield from "../assets/re.png";
+
 import hp from "../assets/hp.jpg";
-import bharat from "../assets/bharat.jpg";
-import gail from "../assets/gail.jpg";
-import indian from "../assets/indianoil.jpg";
-import quillbot from "../assets/quillbot.jpg";
-import canara from "../assets/canara.jpg";
-import hmel from "../assets/hmel.jpg";
+
 import unstop from "../assets/unstop.jpg";
-import gfg from "../assets/glg.jpg";
-import amar from "../assets/amarujala.jpg";
-import coding from "../assets/coding.jpg";
-import oilindia from "../assets/oilinida.jpg";
-import fujifilm from "../assets/fujifilm.jpg";
+import academy from "../assets/curr sponsors/academy.png"
+import bajpai from "../assets/curr sponsors/bajpai.png"
+import baskin from "../assets/curr sponsors/baskin.png"
+import cake from "../assets/curr sponsors/cake.png"
+import no_scars from "../assets/curr sponsors/no scars.png"
+import ocafe from "../assets/curr sponsors/o cafe.png"
+import oxineer from "../assets/curr sponsors/oxineer.png"
+import subway from "../assets/curr sponsors/subway2.png"
+import vr from "../assets/curr sponsors/vr.png"
+import zaika from "../assets/curr sponsors/zaika.png"
 import burger from "../assets/burger.jpg";
-import waffle from "../assets/waffle.jpg";
-import kwikpic from "../assets/kwikpic.jpg";
+
 
 export default function Sponsors1(props) {
     return (
@@ -44,41 +43,41 @@ const testimonials = [
       },{
         quote:
           "Sponsor",
-          image: bharat,
-        name: "Bharat Petroleum",
+          image: academy,
+        name: "LWT Academy",
       },{
         quote:
           "Sponsor",
-          image: gail,
-        name: "Gail",
+          image: bajpai,
+        name: "Bajpai Sons",
       },{
         quote:
           "Sponsor",
-          image: indian,
-        name: "Indian Oil",
+          image: baskin,
+        name: "Baskin Robins",
       },{
         quote:
           "Sponsor",
-          image: royalenfield,
-        name: "Royal Enfield",
+          image: cake,
+        name: "Cakey Bakey",
       },
       {
         quote:
           "Sponsor",
-        image: quillbot,
-        name: "QuillBot",
+        image: no_scars,
+        name: "No Scars",
       },
       {
         quote:
           "Sponsor",
-        image: canara,
-        name: "Canara Bank",
+        image: ocafe,
+        name: "O Cafe",
       },
       {
         quote:
           "Sponsor",
-        image: hmel,
-        name: "HMEL",
+        image: oxineer,
+        name: "Oxineer",
       },
       {
         quote:
@@ -89,32 +88,20 @@ const testimonials = [
       {
         quote:
           "Sponsor",
-        image: gfg,
-        name: "GFG",
+        image: subway,
+        name: "Subway",
       },
       {
         quote:
           "Sponsor",
-        image: amar,
-        name: "Amar Ujala",
+        image: vr,
+        name: "Spark VR",
       },
       {
         quote:
           "Sponsor",
-        image: coding,
-        name: "Coding Blocks",
-      },
-      {
-        quote:
-          "Sponsor",
-        image: oilindia,
-        name: "Oil India Limited",
-      },
-      {
-        quote:
-          "Sponsor",
-        image: fujifilm,
-        name: "FujiFilm",
+        image: zaika,
+        name: "Zaika Express",
       },
       {
         quote:
@@ -122,18 +109,30 @@ const testimonials = [
         image: burger,
         name: "Burger Singh",
       },
-      {
-        quote:
-          "Sponsor",
-        image: waffle,
-        name: "The Waffle Co.",
-      },
-      {
-        quote:
-          "Sponsor",
-        image: kwikpic,
-        name: "Kwikpic",
-      },
+      // {
+      //   quote:
+      //     "Sponsor",
+      //   image: waffle,
+      //   name: "The Waffle Co.",
+      // },
+      // {
+      //   quote:
+      //     "Sponsor",
+      //   image: burger,
+      //   name: "Burger Singh",
+      // },
+      // {
+      //   quote:
+      //     "Sponsor",
+      //   image: waffle,
+      //   name: "The Waffle Co.",
+      // },
+      // {
+      //   quote:
+      //     "Sponsor",
+      //   image: kwikpic,
+      //   name: "Kwikpic",
+      // },
 
 
 ];
