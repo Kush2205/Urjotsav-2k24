@@ -211,21 +211,21 @@ const teamMembers = [
     imgSrc: "heads/fest-coordinator/atul.jpg",
   },
 
-  {
-    id: 27,
-    name: "Khushi Kalra",
-    role: "Event Organizers",
-    position: "Head",
-    mail: "22cs3035@rgipt.ac.in",
-    imgSrc: "heads/eventorganizers/khushi.jpg",
-  },
+  // {
+  //   id: 27,
+  //   name: "Khushi Kalra",
+  //   role: "Event Organizers",
+  //   position: "Head",
+  //   mail: "22cs3035@rgipt.ac.in",
+  //   imgSrc: "heads/eventorganizers/khushi.jpg",
+  // },
   {
     id: 27,
     name: "Rishika Srivastava",
     role: "Event Organizers",
     position: "Head",
     mail: "22it3039@rgipt.ac.in",
-    imgSrc: "heads/eventorganizers/rishika.jpg",
+    imgSrc: "heads/eventorganizers/rishika2.jpg",
   },
   {
     id: 27,
@@ -321,7 +321,7 @@ const Team = () => {
         </h1>
 
         {/* Grid layout for team members */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 sm:gap-y-12 gap-8 sm:gap-6 justify-evenly mt-10 mb-12 transition-all duration-500 ease-in-out">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:gap-y-12 gap-8 sm:gap-6 justify-evenly mt-10 mb-12 transition-all duration-500 ease-in-out">
           {teamMembers
             .filter((member) => member.role === "Event Organizers")
             .map((member) => (
