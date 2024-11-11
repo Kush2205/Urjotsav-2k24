@@ -15,17 +15,23 @@ import subway from "../assets/curr sponsors/subway2.png"
 import vr from "../assets/curr sponsors/vr.png"
 import zaika from "../assets/curr sponsors/zaika.png"
 import burger from "../assets/burger.jpg";
-
+import aie from "../assets/curr sponsors/aie.png"
+import cust from "../assets/curr sponsors/cust.png"
+import du from "../assets/curr sponsors/du.png"
+import enhance from "../assets/curr sponsors/enhance.png"
+import jaiswal from "../assets/curr sponsors/jaiswal.png"
+import laxmi from "../assets/curr sponsors/laxmi.png"
+import punjab from "../assets/curr sponsors/punjab.png"
 
 export default function Sponsors1(props) {
     return (
         <>
         <div className='flex flex-col '>
-            <h3 className="font-Space text-center font-semibold p-4 text-4xl md:mb-[-6%] lg:mb-[3] md:text-6xl lg:text-8xl text-white">
-                     OUR SPONSORS
+            <h3 className="font-Space text-center font-semibold p-4 text-xl md:mb-[-6%] lg:mb-[3] md:text-4xl lg:text-5xl text-white">
+                   Our Sponsors
             </h3>
             <div
-      className="h-[20rem] mt-6 mb-6 md:mt-44 md:mb-44 relative rounded-md flex flex-col antialiased  items-center justify-center overflow-hidden">
+      className="h-[20rem] mt-20 mb-6  relative rounded-md flex flex-col antialiased  items-center justify-center overflow-hidden">
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
     </div>
         </div>
@@ -109,6 +115,48 @@ const testimonials = [
         image: burger,
         name: "Burger Singh",
       },
+      {
+        quote:
+          "Sponsor",
+        image: aie,
+        name: "AIE",
+      },
+      {
+        quote:
+          "Sponsor",
+        image: cust,
+        name: "Cust",
+      },
+      {
+        quote:
+          "Sponsor",
+        image: du,
+        name: "DU",
+      },
+      {
+        quote:
+          "Sponsor",
+        image: enhance,
+        name: "Enhance",
+      },
+      {
+        quote:
+          "Sponsor",
+        image: jaiswal,
+        name: "Jaiswal",
+      },
+      {
+        quote:
+          "Sponsor",
+        image: laxmi,
+        name: "Laxmi",
+      },
+      {
+        quote:
+          "Sponsor",
+        image: punjab,
+        name
+      }
       // {
       //   quote:
       //     "Sponsor",

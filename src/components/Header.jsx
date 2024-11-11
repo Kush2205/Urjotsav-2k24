@@ -59,10 +59,10 @@ export default function Header() {
                                 <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
                             </div>
                         </Link>
-                        <Link to="team">
+                        <Link to="sponsors">
 
                             <div className='relative group hover:scale-[1.2] transition-all'>
-                                Team
+                                Sponsors
                                 <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
                             </div>
 
@@ -83,7 +83,7 @@ export default function Header() {
 
                         <div className='relative group hover:scale-[1.2] transition-all'>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiLb_xBZYVC7N4XNFOPCUj8wcz_NCYujyHkTsr1qRYpNJaQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
-                                Fest passes</a>
+                                Passes</a>
 
                             <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
                         </div>
@@ -94,6 +94,15 @@ export default function Header() {
 
                             <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
                         </div>
+
+                        <div className='relative group hover:scale-[1.2] transition-all'>
+                           <Link to="team">
+                           Team
+                           </Link>
+
+                            <span className='absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out group-hover:w-full'></span>
+                        </div>
+
 
 
                     </div>
